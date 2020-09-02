@@ -40,13 +40,17 @@ class _HomePageState extends State<HomePage> {
                   height: cardheight,
                   width: cardwidth,
                   child: Card(
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(0.0),
+                    ),
                     child: Column(
                       children: <Widget>[
                         Container(
                           height: 300,
                           width: cardwidth,
                           child: Image.asset(
-                            'assets/windowimage2.jpg',
+                            'assets/windowimage${index + 1}.jpg',
                             fit: BoxFit.cover,
                           ),
                         ),
