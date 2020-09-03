@@ -48,7 +48,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
                 colors: [
                   Colors.transparent,
                   Colors.cyan[700].withOpacity(0.5),
-                  Colors.cyan[900]
+                  Colors.cyan[900].withOpacity(0.8)
                 ],
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
@@ -232,7 +232,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.transparent, Colors.cyan[900]],
+                colors: [Colors.transparent, Colors.cyan[900].withOpacity(0.8)],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
