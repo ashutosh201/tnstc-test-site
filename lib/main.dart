@@ -23,6 +23,10 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           Navbar(),
           Homepagebody1(),
+          SizedBox(
+            height: 400,
+          ),
+          /*
           Divider(
             height: 50,
             thickness: 2,
@@ -30,6 +34,7 @@ class _HomePageState extends State<HomePage> {
             endIndent: MediaQuery.of(context).size.width * 0.2,
             color: Colors.grey,
           ),
+          */
           Homepagebody2(),
           Divider(
             height: 50,
