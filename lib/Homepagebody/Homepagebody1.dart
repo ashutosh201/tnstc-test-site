@@ -46,10 +46,16 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
+                  Colors.lightBlue[900].withOpacity(0.8),
+                  Colors.lightBlue[900].withOpacity(0.3)
+                ],
+                /*
+                colors: [
                   Colors.transparent,
                   Colors.cyan[700].withOpacity(0.5),
                   Colors.cyan[900].withOpacity(0.8)
                 ],
+                */
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
               ),
@@ -76,7 +82,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
                           "Aims & Objectives",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 30,
+                            fontSize: 40,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -105,6 +111,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
                       Container(
                         child: FloatingActionButton.extended(
                           onPressed: () {},
+                          backgroundColor: Colors.teal,
                           label: Text(
                             "Details",
                             style: TextStyle(

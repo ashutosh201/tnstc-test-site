@@ -120,7 +120,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         fit: BoxFit.cover),
                   ),
                   Container(
-                    color: Colors.cyan[200].withOpacity(0.9),
+                    color: Colors.teal[300].withOpacity(0.8),
                     child: Column(
                       children: <Widget>[
                         Padding(
@@ -160,7 +160,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               splashColor: Colors.white,
                               hoverColor: Colors.black,
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(3.0),
+                                borderRadius: BorderRadius.circular(1.0),
                                 side: BorderSide(
                                   width: 2,
                                   color: Colors.black,
@@ -182,12 +182,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                 ],
               ),
               tween: Tween<double>(begin: 0, end: 1),
-              duration: Duration(seconds: 1),
+              duration: Duration(milliseconds: 700),
               builder: (context, value, child) {
                 return Opacity(
                   opacity: value,
                   child: Padding(
-                    padding: EdgeInsets.only(left: value * 40),
+                    padding: EdgeInsets.only(left: (1 - value) * 250 + 40),
                     child: child,
                   ),
                 );
@@ -270,7 +270,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         fit: BoxFit.cover),
                   ),
                   Container(
-                    color: Colors.cyan[200].withOpacity(0.9),
+                    color: Colors.teal[300].withOpacity(0.8),
                     child: Column(
                       children: <Widget>[
                         Padding(
@@ -310,7 +310,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               splashColor: Colors.white,
                               hoverColor: Colors.black,
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(3.0),
+                                borderRadius: BorderRadius.circular(1.0),
                                 side: BorderSide(
                                   width: 2,
                                   color: Colors.black,
@@ -332,12 +332,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                 ],
               ),
               tween: Tween<double>(begin: 0, end: 1),
-              duration: Duration(seconds: 1),
+              duration: Duration(milliseconds: 700),
               builder: (context, value, child) {
                 return Opacity(
                   opacity: value,
                   child: Padding(
-                    padding: EdgeInsets.only(left: value * 40),
+                    padding: EdgeInsets.only(left: (1 - value) * 250 + 40),
                     child: child,
                   ),
                 );

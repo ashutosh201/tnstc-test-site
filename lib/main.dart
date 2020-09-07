@@ -38,12 +38,44 @@ class _HomePageState extends State<HomePage> {
           ),
           */
               Homepagebody2(),
+              SizedBox(
+                height: 200,
+              ),
               Divider(
                 height: 50,
                 thickness: 2,
                 indent: MediaQuery.of(context).size.width * 0.2,
                 endIndent: MediaQuery.of(context).size.width * 0.2,
                 color: Colors.grey,
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: Stack(
+                  children: <Widget>[
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 300,
+                      child: Image.asset(
+                        'assets/homepagebackground4.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 270,
+                          color: Colors.lightBlue[900].withOpacity(0.7),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 30,
+                          color: Colors.teal.withOpacity(0.5),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
@@ -52,7 +84,8 @@ class _HomePageState extends State<HomePage> {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               child: Card(
-                color: Colors.blueGrey[600],
+                elevation: 10,
+                color: Colors.blueGrey[600].withOpacity(0.8),
                 child: Navbar(),
               ),
             ),

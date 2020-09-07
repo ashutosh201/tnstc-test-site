@@ -86,6 +86,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                     height: 30,
                     child: FloatingActionButton.extended(
                       onPressed: () {},
+                      backgroundColor: Colors.teal,
                       label: Text(
                         "Contact Us",
                         style: TextStyle(
