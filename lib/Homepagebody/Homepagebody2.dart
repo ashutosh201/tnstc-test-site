@@ -89,6 +89,8 @@ class DesktopHomepagebody2 extends StatefulWidget {
 class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
   double photoheight = 300;
   double photowidth = 500;
+  Color button1textcolor = Colors.black;
+  Color button2textcolor = Colors.black;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -142,20 +144,34 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
-                          child: FlatButton(
-                            onPressed: () {},
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(3.0),
-                              side: BorderSide(
-                                width: 2,
-                                color: Colors.black,
+                          child: MouseRegion(
+                            onHover: (event) {
+                              setState(() {
+                                button1textcolor = Colors.white;
+                              });
+                            },
+                            onExit: (event) {
+                              setState(() {
+                                button1textcolor = Colors.black;
+                              });
+                            },
+                            child: FlatButton(
+                              onPressed: () {},
+                              splashColor: Colors.white,
+                              hoverColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(3.0),
+                                side: BorderSide(
+                                  width: 2,
+                                  color: Colors.black,
+                                ),
                               ),
-                            ),
-                            child: Text(
-                              "View",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
+                              child: Text(
+                                "View",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: button1textcolor,
+                                ),
                               ),
                             ),
                           ),
@@ -278,20 +294,34 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
-                          child: FlatButton(
-                            onPressed: () {},
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(3.0),
-                              side: BorderSide(
-                                width: 2,
-                                color: Colors.black,
+                          child: MouseRegion(
+                            onHover: (event) {
+                              setState(() {
+                                button2textcolor = Colors.white;
+                              });
+                            },
+                            onExit: (event) {
+                              setState(() {
+                                button2textcolor = Colors.black;
+                              });
+                            },
+                            child: FlatButton(
+                              onPressed: () {},
+                              splashColor: Colors.white,
+                              hoverColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(3.0),
+                                side: BorderSide(
+                                  width: 2,
+                                  color: Colors.black,
+                                ),
                               ),
-                            ),
-                            child: Text(
-                              "View",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
+                              child: Text(
+                                "View",
+                                style: TextStyle(
+                                  color: button2textcolor,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
