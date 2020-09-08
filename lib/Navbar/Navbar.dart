@@ -178,6 +178,7 @@ class _MobileNavbarState extends State<MobileNavbar> {
                   height: 30,
                   child: FloatingActionButton.extended(
                     onPressed: () {},
+                    backgroundColor: Colors.teal,
                     label: Text(
                       "Contact Us",
                       style: TextStyle(

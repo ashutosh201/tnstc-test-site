@@ -1,6 +1,13 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-class Homepagebody1 extends StatelessWidget {
+class Homepagebody1 extends StatefulWidget {
+  @override
+  _Homepagebody1State createState() => _Homepagebody1State();
+}
+
+class _Homepagebody1State extends State<Homepagebody1> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -98,11 +105,15 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
                       SizedBox(
                         height: 20,
                       ),
-                      Text(
-                        "To popularise Science and Technology among the general public in the urban and rural areas.",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                      Container(
+                        width: 500,
+                        height: 50,
+                        child: Text(
+                          "To popularise Science and Technology among the general public in the urban and rural areas.",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -239,7 +250,10 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.transparent, Colors.cyan[900].withOpacity(0.8)],
+                colors: [
+                  Colors.lightBlue[900].withOpacity(0.8),
+                  Colors.lightBlue[900].withOpacity(0.3)
+                ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -264,8 +278,9 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
                 SizedBox(
                   height: 20,
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(40.0, 0, 40.0, 0),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  height: 50,
                   child: Text(
                     "To popularise Science and Technology among the general public in the urban and rural areas.",
                     style: TextStyle(
@@ -280,6 +295,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
                 Container(
                   child: FloatingActionButton.extended(
                     onPressed: () {},
+                    backgroundColor: Colors.teal,
                     label: Text(
                       "Details",
                       style: TextStyle(

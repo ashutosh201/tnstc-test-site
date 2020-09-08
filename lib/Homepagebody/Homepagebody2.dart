@@ -26,56 +26,202 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: cardheight,
-      child: ListView.builder(
+      color: Colors.teal[200],
+      width: MediaQuery.of(context).size.width,
+      child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        itemCount: 4,
-        itemBuilder: (context, index) {
-          return Container(
-            height: cardheight,
-            width: cardwidth,
-            child: Card(
-              elevation: 5,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0.0),
-              ),
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 300,
-                    width: cardwidth,
-                    child: Image.asset(
-                      'assets/windowimage${index + 1}.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      centrename[index],
-                      style: TextStyle(
-                        fontSize: 15,
+        child: Row(
+          children: [
+            TweenAnimationBuilder(
+              child: SizedBox(),
+              tween: Tween<double>(begin: 1, end: 0),
+              duration: Duration(milliseconds: 800),
+              builder: (context, value, child) {
+                return Padding(
+                  padding: EdgeInsets.only(
+                      left: value * (MediaQuery.of(context).size.width + 10)),
+                  child: child,
+                );
+              },
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage1.jpg',
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                    child: FlatButton(
-                      onPressed: () {},
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "View",
+                        centrename[0],
                         style: TextStyle(
-                          color: Colors.white,
+                          fontSize: 15,
                         ),
                       ),
-                      color: Colors.blue.withOpacity(0.7),
                     ),
-                  ),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          );
-        },
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage2.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[1],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage3.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[2],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage4.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[3],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
