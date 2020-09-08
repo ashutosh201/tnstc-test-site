@@ -280,7 +280,6 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 40),
-                  height: 50,
                   child: Text(
                     "To popularise Science and Technology among the general public in the urban and rural areas.",
                     style: TextStyle(
@@ -305,7 +304,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
                   ),
                 ),
                 SizedBox(
-                  height: 100,
+                  height: 90,
                 ),
                 Container(
                   height: 300,
