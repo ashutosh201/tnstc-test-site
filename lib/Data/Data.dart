@@ -13,3 +13,8 @@ List<String> centreinfo = [
   "In order to cater to the needs of people in the western parts of Tamilnadu, permission was sought from the Government for the establishment of a Regional Science Centre at Coimbatore. This centre organizes outreach activities such as Meet the Scientist, Meet your Medical Expert, Teacher Training, Students Motivation Programme etc",
   "The District Science Centre, Vellore was established by the government of Tamilnadu and the thrown open to public on 25.01.2011. the District Science Centre has been established with four Halls of Science viz., Physical Science, Hall of Discovery, Environment and Industry"
 ];
+
+List<String> aims = [
+  "To popularise Science and Technology among the general public in the urban and rural areas.",
+  "To supplement the Formal Science Education given in the Schools and Colleges."
+];

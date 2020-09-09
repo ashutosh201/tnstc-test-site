@@ -21,26 +21,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          ListView(
-            children: <Widget>[
-              //Navbar(),
-              Homepagebody1(),
-              SizedBox(
-                height: 400,
-              ),
-              /*
-          Divider(
-            height: 50,
-            thickness: 2,
-            indent: MediaQuery.of(context).size.width * 0.2,
-            endIndent: MediaQuery.of(context).size.width * 0.2,
-            color: Colors.grey,
-          ),
-          */
-              Homepagebody2(),
-              SizedBox(
-                height: 200,
-              ),
+          SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                //Navbar(),
+                Homepagebody1(),
+                SizedBox(
+                  height: 400,
+                ),
+                /*
               Divider(
                 height: 50,
                 thickness: 2,
@@ -48,36 +37,49 @@ class _HomePageState extends State<HomePage> {
                 endIndent: MediaQuery.of(context).size.width * 0.2,
                 color: Colors.grey,
               ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                child: Stack(
-                  children: <Widget>[
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 300,
-                      child: Image.asset(
-                        'assets/homepagebackground4.jpg',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 270,
-                          color: Colors.lightBlue[900].withOpacity(0.7),
-                        ),
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 30,
-                          color: Colors.teal.withOpacity(0.5),
-                        ),
-                      ],
-                    ),
-                  ],
+              */
+                Homepagebody2(),
+                SizedBox(
+                  height: 200,
                 ),
-              ),
-            ],
+                Divider(
+                  height: 50,
+                  thickness: 2,
+                  indent: MediaQuery.of(context).size.width * 0.2,
+                  endIndent: MediaQuery.of(context).size.width * 0.2,
+                  color: Colors.grey,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 300,
+                        child: Image.asset(
+                          'assets/homepagebackground4.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 270,
+                            color: Colors.lightBlue[900].withOpacity(0.7),
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 30,
+                            color: Colors.teal.withOpacity(0.5),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             width: MediaQuery.of(context).size.width,

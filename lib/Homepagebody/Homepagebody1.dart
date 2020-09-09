@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:tnstc_test_site/Data/Data.dart';
 
 class Homepagebody1 extends StatefulWidget {
   @override
@@ -27,9 +28,40 @@ class DesktopHomepagebody1 extends StatefulWidget {
   _DesktopHomepagebody1State createState() => _DesktopHomepagebody1State();
 }
 
-class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
+class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
+    with SingleTickerProviderStateMixin {
   PageController pagecontroller = PageController(initialPage: 0);
   int imagewindowindex = 0;
+  int aimindex = 0;
+  AnimationController _animationcontroller;
+  Animation _opacity;
+  @override
+  void initState() {
+    super.initState();
+    _animationcontroller = AnimationController(
+      duration: Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _opacity = Tween<double>(begin: 0, end: 1).animate(_animationcontroller);
+    _animationcontroller.addListener(() {});
+    _animationcontroller.forward();
+    _animationcontroller.addStatusListener((status) {
+      if (status == AnimationStatus.dismissed) {
+        if (aimindex == 0) {
+          aimindex = 1;
+        } else {
+          aimindex = 0;
+        }
+        _animationcontroller.forward();
+      }
+      if (status == AnimationStatus.completed) {
+        Future.delayed(Duration(seconds: 4), () {
+          _animationcontroller.reverse();
+        });
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -108,12 +140,20 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1> {
                       Container(
                         width: 500,
                         height: 50,
-                        child: Text(
-                          "To popularise Science and Technology among the general public in the urban and rural areas.",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
+                        child: AnimatedBuilder(
+                          animation: _animationcontroller,
+                          builder: (context, child) {
+                            return Opacity(
+                              opacity: _opacity.value,
+                              child: Text(
+                                aims[aimindex],
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ),
                       SizedBox(
@@ -225,9 +265,40 @@ class MobileHomepagebody1 extends StatefulWidget {
   _MobileHomepagebody1State createState() => _MobileHomepagebody1State();
 }
 
-class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
+class _MobileHomepagebody1State extends State<MobileHomepagebody1>
+    with SingleTickerProviderStateMixin {
   PageController pagecontroller = PageController(initialPage: 0);
   int imagewindowindex = 0;
+  int aimindex = 0;
+  AnimationController _animationcontroller;
+  Animation _opacity;
+  @override
+  void initState() {
+    super.initState();
+    _animationcontroller = AnimationController(
+      duration: Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _opacity = Tween<double>(begin: 0, end: 1).animate(_animationcontroller);
+    _animationcontroller.addListener(() {});
+    _animationcontroller.forward();
+    _animationcontroller.addStatusListener((status) {
+      if (status == AnimationStatus.dismissed) {
+        if (aimindex == 0) {
+          aimindex = 1;
+        } else {
+          aimindex = 0;
+        }
+        _animationcontroller.forward();
+      }
+      if (status == AnimationStatus.completed) {
+        Future.delayed(Duration(seconds: 4), () {
+          _animationcontroller.reverse();
+        });
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -280,12 +351,20 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 40),
-                  child: Text(
-                    "To popularise Science and Technology among the general public in the urban and rural areas.",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
+                  child: AnimatedBuilder(
+                    animation: _animationcontroller,
+                    builder: (context, child) {
+                      return Opacity(
+                        opacity: _opacity.value,
+                        child: Text(
+                          aims[aimindex],
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 SizedBox(
