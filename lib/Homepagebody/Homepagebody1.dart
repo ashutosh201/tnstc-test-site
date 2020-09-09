@@ -66,12 +66,12 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.9,
+      height: MediaQuery.of(context).size.height,
       child: Stack(
         children: <Widget>[
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/homepagebackground.jpg'),
@@ -81,7 +81,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
@@ -102,7 +102,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height,
             child: Row(
               children: <Widget>[
                 SizedBox(
@@ -110,11 +110,11 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.3,
-                  height: MediaQuery.of(context).size.height * 0.9,
+                  height: MediaQuery.of(context).size.height,
                   child: Column(
                     children: <Widget>[
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.3,
+                        height: MediaQuery.of(context).size.height * 0.3 + 50,
                       ),
                       TweenAnimationBuilder(
                         child: Text(
