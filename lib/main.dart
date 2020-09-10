@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Homepagebody/Homepagebody1.dart';
 import 'Homepagebody/Homepagebody2.dart';
+import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
 import 'Data/Data.dart';
 
@@ -27,7 +28,11 @@ class _HomePageState extends State<HomePage> {
                 //Navbar(),
                 Homepagebody1(),
                 SizedBox(
-                  height: 400,
+                  height: 200,
+                ),
+                Homepagebody3(),
+                SizedBox(
+                  height: 200,
                 ),
                 /*
               Divider(
@@ -83,13 +88,14 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-              child: Card(
-                elevation: 10,
-                color: Colors.blueGrey[600].withOpacity(0.8),
-                child: Navbar(),
+            child: Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0),
               ),
+              margin: EdgeInsets.zero,
+              elevation: 10,
+              color: Colors.blueGrey[600].withOpacity(0.8),
+              child: Navbar(),
             ),
           ),
         ],

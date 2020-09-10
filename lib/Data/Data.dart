@@ -18,3 +18,25 @@ List<String> aims = [
   "To popularise Science and Technology among the general public in the urban and rural areas.",
   "To supplement the Formal Science Education given in the Schools and Colleges."
 ];
+
+List<String> optionlist = [
+  "Library",
+  "Administration",
+  "Astronomical events",
+  "Outreach activities",
+  "Development activities",
+  "Endowments",
+  "Feedback",
+  "Fee structure"
+];
+
+List<IconData> optioniconlist = [
+  Icons.school,
+  Icons.people,
+  Icons.brightness_3,
+  Icons.timeline,
+  Icons.gesture,
+  Icons.attach_money,
+  Icons.feedback,
+  Icons.monetization_on
+];
