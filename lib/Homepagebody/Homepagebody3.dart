@@ -524,94 +524,12 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                             height: MediaQuery.of(context).size.width * 0.08,
                           ),
                           Icon(
-                            optioniconlist[5],
-                            color: Colors.teal[300],
-                            size: MediaQuery.of(context).size.width * 0.2,
-                          ),
-                          Text(
-                            optionlist[5],
-                            style: TextStyle(
-                              color: Colors.teal[300],
-                              fontSize: 25,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onTap: () {},
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.width * 0.02,
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.04,
-                  ),
-                  InkWell(
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.45,
-                      height: MediaQuery.of(context).size.width * 0.45,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.teal[300],
-                          width: 4,
-                        ),
-                      ),
-                      child: Column(
-                        children: <Widget>[
-                          SizedBox(
-                            height: MediaQuery.of(context).size.width * 0.08,
-                          ),
-                          Icon(
                             optioniconlist[6],
                             color: Colors.teal[300],
                             size: MediaQuery.of(context).size.width * 0.2,
                           ),
                           Text(
                             optionlist[6],
-                            style: TextStyle(
-                              color: Colors.teal[300],
-                              fontSize: 25,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onTap: () {},
-                  ),
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
-                  ),
-                  InkWell(
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.45,
-                      height: MediaQuery.of(context).size.width * 0.45,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.teal[300],
-                          width: 4,
-                        ),
-                      ),
-                      child: Column(
-                        children: <Widget>[
-                          SizedBox(
-                            height: MediaQuery.of(context).size.width * 0.08,
-                          ),
-                          Icon(
-                            optioniconlist[7],
-                            color: Colors.teal[300],
-                            size: MediaQuery.of(context).size.width * 0.2,
-                          ),
-                          Text(
-                            optionlist[7],
                             style: TextStyle(
                               color: Colors.teal[300],
                               fontSize: 25,
