@@ -33,6 +33,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
   PageController pagecontroller = PageController(initialPage: 0);
   int imagewindowindex = 0;
   int aimindex = 0;
+  double button1opacity = 0.5, button2opacity = 1;
   AnimationController _animationcontroller;
   Animation _opacity;
   @override
@@ -185,6 +186,22 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                       children: <Widget>[
                         PageView(
                           controller: pagecontroller,
+                          onPageChanged: (int page) {
+                            imagewindowindex = page;
+                            if (imagewindowindex == 0) {
+                              button1opacity = 0.5;
+                              button2opacity = 1;
+                              setState(() {});
+                            } else if (imagewindowindex == 3) {
+                              button1opacity = 1;
+                              button2opacity = 0.5;
+                              setState(() {});
+                            } else {
+                              button1opacity = 1;
+                              button2opacity = 1;
+                              setState(() {});
+                            }
+                          },
                           children: <Widget>[
                             Container(
                               height: MediaQuery.of(context).size.height * 0.6,
@@ -218,31 +235,39 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              FloatingActionButton(
-                                onPressed: () {
-                                  if (imagewindowindex > 0) {
-                                    imagewindowindex--;
-                                    pagecontroller.animateToPage(
-                                        imagewindowindex,
-                                        duration: Duration(milliseconds: 300),
-                                        curve: Curves.decelerate);
-                                  }
-                                },
-                                backgroundColor: Colors.grey.withOpacity(0.8),
-                                child: Icon(Icons.arrow_back_ios),
+                              AnimatedOpacity(
+                                opacity: button1opacity,
+                                duration: Duration(milliseconds: 300),
+                                child: FloatingActionButton(
+                                  onPressed: () {
+                                    if (imagewindowindex > 0) {
+                                      imagewindowindex--;
+                                      pagecontroller.animateToPage(
+                                          imagewindowindex,
+                                          duration: Duration(milliseconds: 300),
+                                          curve: Curves.decelerate);
+                                    }
+                                  },
+                                  backgroundColor: Colors.grey.withOpacity(0.8),
+                                  child: Icon(Icons.arrow_back_ios),
+                                ),
                               ),
-                              FloatingActionButton(
-                                onPressed: () {
-                                  if (imagewindowindex < 3) {
-                                    imagewindowindex++;
-                                    pagecontroller.animateToPage(
-                                        imagewindowindex,
-                                        duration: Duration(milliseconds: 300),
-                                        curve: Curves.decelerate);
-                                  }
-                                },
-                                backgroundColor: Colors.grey.withOpacity(0.8),
-                                child: Icon(Icons.arrow_forward_ios),
+                              AnimatedOpacity(
+                                opacity: button2opacity,
+                                duration: Duration(milliseconds: 300),
+                                child: FloatingActionButton(
+                                  onPressed: () {
+                                    if (imagewindowindex < 3) {
+                                      imagewindowindex++;
+                                      pagecontroller.animateToPage(
+                                          imagewindowindex,
+                                          duration: Duration(milliseconds: 300),
+                                          curve: Curves.decelerate);
+                                    }
+                                  },
+                                  backgroundColor: Colors.grey.withOpacity(0.8),
+                                  child: Icon(Icons.arrow_forward_ios),
+                                ),
                               ),
                             ],
                           ),
@@ -270,6 +295,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
   PageController pagecontroller = PageController(initialPage: 0);
   int imagewindowindex = 0;
   int aimindex = 0;
+  double button1opacity = 0.5, button2opacity = 1;
   AnimationController _animationcontroller;
   Animation _opacity;
   @override
@@ -393,6 +419,22 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
                       children: <Widget>[
                         PageView(
                           controller: pagecontroller,
+                          onPageChanged: (int page) {
+                            imagewindowindex = page;
+                            if (imagewindowindex == 0) {
+                              button1opacity = 0.5;
+                              button2opacity = 1;
+                              setState(() {});
+                            } else if (imagewindowindex == 3) {
+                              button1opacity = 1;
+                              button2opacity = 0.5;
+                              setState(() {});
+                            } else {
+                              button1opacity = 1;
+                              button2opacity = 1;
+                              setState(() {});
+                            }
+                          },
                           children: <Widget>[
                             Container(
                               height: 300,
@@ -426,33 +468,41 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              FloatingActionButton(
-                                mini: true,
-                                onPressed: () {
-                                  if (imagewindowindex > 0) {
-                                    imagewindowindex--;
-                                    pagecontroller.animateToPage(
-                                        imagewindowindex,
-                                        duration: Duration(milliseconds: 300),
-                                        curve: Curves.decelerate);
-                                  }
-                                },
-                                backgroundColor: Colors.grey.withOpacity(0.8),
-                                child: Icon(Icons.arrow_back_ios),
+                              AnimatedOpacity(
+                                opacity: button1opacity,
+                                duration: Duration(milliseconds: 300),
+                                child: FloatingActionButton(
+                                  mini: true,
+                                  onPressed: () {
+                                    if (imagewindowindex > 0) {
+                                      imagewindowindex--;
+                                      pagecontroller.animateToPage(
+                                          imagewindowindex,
+                                          duration: Duration(milliseconds: 300),
+                                          curve: Curves.decelerate);
+                                    }
+                                  },
+                                  backgroundColor: Colors.grey.withOpacity(0.8),
+                                  child: Icon(Icons.arrow_back_ios),
+                                ),
                               ),
-                              FloatingActionButton(
-                                mini: true,
-                                onPressed: () {
-                                  if (imagewindowindex < 3) {
-                                    imagewindowindex++;
-                                    pagecontroller.animateToPage(
-                                        imagewindowindex,
-                                        duration: Duration(milliseconds: 300),
-                                        curve: Curves.decelerate);
-                                  }
-                                },
-                                backgroundColor: Colors.grey.withOpacity(0.8),
-                                child: Icon(Icons.arrow_forward_ios),
+                              AnimatedOpacity(
+                                opacity: button2opacity,
+                                duration: Duration(milliseconds: 300),
+                                child: FloatingActionButton(
+                                  mini: true,
+                                  onPressed: () {
+                                    if (imagewindowindex < 3) {
+                                      imagewindowindex++;
+                                      pagecontroller.animateToPage(
+                                          imagewindowindex,
+                                          duration: Duration(milliseconds: 300),
+                                          curve: Curves.decelerate);
+                                    }
+                                  },
+                                  backgroundColor: Colors.grey.withOpacity(0.8),
+                                  child: Icon(Icons.arrow_forward_ios),
+                                ),
                               ),
                             ],
                           ),
