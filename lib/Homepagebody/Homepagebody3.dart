@@ -24,248 +24,254 @@ class DesktopHomepagebody3 extends StatefulWidget {
 class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 350,
-      color: Colors.teal[300].withOpacity(0.7),
-      child: Center(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: <Widget>[
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[0],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        optionlist[0],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
+    return TweenAnimationBuilder(
+        tween:
+            Tween<double>(begin: MediaQuery.of(context).size.height, end: 350),
+        duration: Duration(milliseconds: 1000),
+        builder: (context, value, child) {
+          return Container(
+            width: MediaQuery.of(context).size.width,
+            height: value,
+            color: Colors.teal[300].withOpacity(0.7),
+            child: Center(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: <Widget>[
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[0],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              optionlist[0],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
                         ),
+                        height: 200,
+                        width: 200,
                       ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[1],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              optionlist[1],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[2],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              "Astronomical",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              "events",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[3],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              "Outreach",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              "activities",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[4],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              "Development",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            Text(
+                              "activities",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[5],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              optionlist[5],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      hoverColor: Colors.blue,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 25,
+                            ),
+                            Icon(
+                              optioniconlist[6],
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                            Text(
+                              optionlist[6],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ],
+                        ),
+                        height: 200,
+                        width: 200,
+                      ),
+                      onTap: () {},
+                    ),
+                  ],
                 ),
-                onTap: () {},
               ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[1],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        optionlist[1],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[2],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        "Astronomical",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                      Text(
-                        "events",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[3],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        "Outreach",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                      Text(
-                        "activities",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[4],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        "Development",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                      Text(
-                        "activities",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[5],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        optionlist[5],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                hoverColor: Colors.blue,
-                child: Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Icon(
-                        optioniconlist[6],
-                        color: Colors.white,
-                        size: 100,
-                      ),
-                      Text(
-                        optionlist[6],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                  height: 200,
-                  width: 200,
-                ),
-                onTap: () {},
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+            ),
+          );
+        });
   }
 }
 
