@@ -104,7 +104,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
       child: Column(
         children: <Widget>[
           SizedBox(
-            height: 50,
+            height: 10,
           ),
           Container(
             width: MediaQuery.of(context).size.width,

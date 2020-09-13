@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Homepagebody/Homepagebody1.dart';
 import 'Homepagebody/Homepagebody2.dart';
 import 'Navbar/Navbar.dart';
+import 'Footer/Footer.dart';
 import 'Data/Data.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: "TNSTC OFFICIAL WEBSITE",
     home: HomePage(),
   ));
 }
@@ -37,12 +39,13 @@ class _HomePageState extends State<HomePage> {
           */
           Homepagebody2(),
           Divider(
-            height: 50,
+            height: 0,
             thickness: 2,
-            indent: MediaQuery.of(context).size.width * 0.2,
-            endIndent: MediaQuery.of(context).size.width * 0.2,
+            indent: MediaQuery.of(context).size.width * 0.0,
+            endIndent: MediaQuery.of(context).size.width * 0.0,
             color: Colors.grey,
           ),
+          Footer(),
         ],
       ),
     );
