@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -26,128 +25,157 @@ class _DesktopFooterState extends State<DesktopFooter> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 300,
-      color: Colors.cyan[200].withOpacity(0.9),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          children: <Widget>[
-            SizedBox(
-              width: MediaQuery.of(context).size.width * 0.15,
+      child: Stack(
+        children: <Widget>[
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: 300,
+            child: Image.asset(
+              'assets/homepagebackground4.jpg',
+              fit: BoxFit.cover,
             ),
-            Container(
-              padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
-              child: Column(
-                children: [
-                  Text(
-                    "Tamilnadu Science & Technology Centre",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                    ),
-                  ),
-                  Text(
-                    "Gandhi Mandapam Road,",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                    ),
-                    
-                  ),
-                  
-                  Text(
-                    "Tel: 044 24410025, 24915250",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                    ),
-                  ),
-                  Text(
-                    "Email: tnstc.science@gmail.com",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                    ),
-                  ),
-                ],
+          ),
+          Column(
+            children: <Widget>[
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 270,
+                color: Colors.lightBlue[900].withOpacity(0.7),
               ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * 0.10,
-            ),
-            Container(
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Quick Links",
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 30,
+                color: Colors.teal.withOpacity(0.5),
+              ),
+            ],
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: 300,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.3,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 70,
+                      ),
+                      Text(
+                        "Tamilnadu Science & Technology Centre",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 25,
                         ),
                       ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Timings",
+                      Text(
+                        "Gandhi Mandapam Road,",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 15,
                         ),
                       ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Fee Structure",
+                      Text(
+                        "Tel: 044 24410025, 24915250",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 15,
                         ),
                       ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                    height: 30,
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        "How to Reach",
+                      Text(
+                        "Email: tnstc.science@gmail.com",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
+                          fontSize: 15,
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                    height: 30,
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Feed Back",
-                        style: TextStyle(
-                          color: Colors.black,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.3,
+                  height: 300,
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Quick Links",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        height: 30,
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Timings",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        height: 30,
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Fee Structure",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        height: 30,
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "How to Reach",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        height: 30,
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Feed Back",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

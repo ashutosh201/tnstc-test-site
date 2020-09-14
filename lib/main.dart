@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Homepagebody/Homepagebody1.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 import 'Homepagebody/Homepagebody2.dart';
@@ -8,6 +9,7 @@ import 'Data/Data.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: 'TNSTC OFFICIAL WEBSITE',
     home: HomePage(),
   ));
 }
@@ -71,35 +73,7 @@ class _DesktopHomepageState extends State<DesktopHomepage> {
                         endIndent: MediaQuery.of(context).size.width * 0.2,
                         color: Colors.grey,
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        child: Stack(
-                          children: <Widget>[
-                            Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 300,
-                              child: Image.asset(
-                                'assets/homepagebackground4.jpg',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  width: MediaQuery.of(context).size.width,
-                                  height: 270,
-                                  color: Colors.lightBlue[900].withOpacity(0.7),
-                                ),
-                                Container(
-                                  width: MediaQuery.of(context).size.width,
-                                  height: 30,
-                                  color: Colors.teal.withOpacity(0.5),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
+                      DesktopFooter(),
                     ],
                   ),
                 ),
