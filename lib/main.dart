@@ -4,12 +4,10 @@ import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 import 'Homepagebody/Homepagebody2.dart';
 import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
-import 'Footer/Footer.dart';
 import 'Data/Data.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: "TNSTC OFFICIAL WEBSITE",
     home: HomePage(),
   ));
 }
@@ -120,7 +118,6 @@ class _DesktopHomepageState extends State<DesktopHomepage> {
               child: DesktopNavbar(),
             ),
           ),
-          Footer(),
         ],
       ),
     );
