@@ -25,8 +25,8 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      color: Colors.blueGrey[600],
+      width: MediaQuery.of(context).size.width * 0.97,
+      //color: Colors.blueGrey[600],
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -91,6 +91,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                     height: 30,
                     child: FloatingActionButton.extended(
                       onPressed: () {},
+                      backgroundColor: Colors.teal,
                       label: Text(
                         "Contact Us",
                         style: TextStyle(
@@ -119,7 +120,8 @@ class _MobileNavbarState extends State<MobileNavbar> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      color: Colors.blueGrey[600],
+      height: 80,
+      //color: Colors.blueGrey[600],
       child: Column(
         children: <Widget>[
           SizedBox(
@@ -152,19 +154,19 @@ class _MobileNavbarState extends State<MobileNavbar> {
                   ),
                 ),
                 /*
-                Container(
-                  child: FlatButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Fee Structure",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
+                  Container(
+                    child: FlatButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Fee Structure",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                */
+                  */
                 Container(
                   child: FlatButton(
                     onPressed: () {},
@@ -181,6 +183,7 @@ class _MobileNavbarState extends State<MobileNavbar> {
                   height: 30,
                   child: FloatingActionButton.extended(
                     onPressed: () {},
+                    backgroundColor: Colors.teal,
                     label: Text(
                       "Contact Us",
                       style: TextStyle(

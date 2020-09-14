@@ -27,56 +27,202 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: cardheight,
-      child: ListView.builder(
+      color: Colors.teal[200],
+      width: MediaQuery.of(context).size.width,
+      child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        itemCount: 4,
-        itemBuilder: (context, index) {
-          return Container(
-            height: cardheight,
-            width: cardwidth,
-            child: Card(
-              elevation: 5,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0.0),
-              ),
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 300,
-                    width: cardwidth,
-                    child: Image.asset(
-                      'assets/windowimage${index + 1}.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      centrename[index],
-                      style: TextStyle(
-                        fontSize: 15,
+        child: Row(
+          children: [
+            TweenAnimationBuilder(
+              child: SizedBox(),
+              tween: Tween<double>(begin: 1, end: 0),
+              duration: Duration(milliseconds: 800),
+              builder: (context, value, child) {
+                return Padding(
+                  padding: EdgeInsets.only(
+                      left: value * (MediaQuery.of(context).size.width + 10)),
+                  child: child,
+                );
+              },
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage1.jpg',
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                    child: FlatButton(
-                      onPressed: () {},
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "View",
+                        centrename[0],
                         style: TextStyle(
-                          color: Colors.white,
+                          fontSize: 15,
                         ),
                       ),
-                      color: Colors.blue.withOpacity(0.7),
                     ),
-                  ),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          );
-        },
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage2.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[1],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage3.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[2],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: cardheight,
+              width: cardwidth,
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      height: 300,
+                      width: cardwidth,
+                      child: Image.asset(
+                        'assets/windowimage4.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        centrename[3],
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.blue.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -90,6 +236,8 @@ class DesktopHomepagebody2 extends StatefulWidget {
 class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
   double photoheight = 300;
   double photowidth = 500;
+  Color button1textcolor = Colors.black;
+  Color button2textcolor = Colors.black;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -105,48 +253,76 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
       child: Column(
         children: <Widget>[
           SizedBox(
-            height: 10,
+            height: 100,
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            child: TweenAnimationBuilder(
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    height: photoheight,
-                    width: photowidth,
-                    child: Image.asset('assets/windowimage1.jpg',
-                        fit: BoxFit.cover),
+            child: Row(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 40),
+                  height: photoheight,
+                  width: photowidth,
+                  child:
+                      Image.asset('assets/windowimage1.jpg', fit: BoxFit.cover),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border(
+                      top: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                      bottom: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                      right: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                    ),
                   ),
-                  Container(
-                    color: Colors.cyan[200].withOpacity(0.9),
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Text(
-                            centrename[0],
-                            style: TextStyle(
-                              fontSize: 25,
-                            ),
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Text(
+                          centrename[0],
+                          style: TextStyle(
+                            fontSize: 25,
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(15),
-                          width: 700,
-                          child: Text(
-                            centreinfo[0],
-                            style: TextStyle(
-                              fontSize: 17,
-                            ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(15),
+                        width: 700,
+                        child: Text(
+                          centreinfo[0],
+                          style: TextStyle(
+                            fontSize: 17,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                        child: MouseRegion(
+                          onHover: (event) {
+                            setState(() {
+                              button1textcolor = Colors.white;
+                            });
+                          },
+                          onExit: (event) {
+                            setState(() {
+                              button1textcolor = Colors.black;
+                            });
+                          },
                           child: FlatButton(
                             onPressed: () {},
+                            splashColor: Colors.white,
+                            hoverColor: Colors.black,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(3.0),
+                              borderRadius: BorderRadius.circular(1.0),
                               side: BorderSide(
                                 width: 2,
                                 color: Colors.black,
@@ -155,38 +331,30 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             child: Text(
                               "View",
                               style: TextStyle(
-                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
+                                color: button1textcolor,
                               ),
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              tween: Tween<double>(begin: 0, end: 1),
-              duration: Duration(seconds: 1),
-              builder: (context, value, child) {
-                return Opacity(
-                  opacity: value,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: value * 40),
-                    child: child,
-                  ),
-                );
-              },
+                ),
+              ],
             ),
           ),
-          TweenAnimationBuilder(
-            child: Container(
-              color: Colors.blueGrey[400].withOpacity(0.8),
-              width: MediaQuery.of(context).size.width,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Column(
+          SizedBox(
+            height: 150,
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Container(
+                  color: Colors.blueGrey[400].withOpacity(0.8),
+                  child: Column(
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(10),
@@ -224,65 +392,88 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                       ),
                     ],
                   ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                    height: photoheight,
-                    width: photowidth,
-                    child: Image.asset('assets/windowimage2.jpg',
-                        fit: BoxFit.cover),
-                  ),
-                ],
-              ),
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(0, 0, 40, 0),
+                  height: photoheight,
+                  width: photowidth,
+                  child:
+                      Image.asset('assets/windowimage2.jpg', fit: BoxFit.cover),
+                ),
+              ],
             ),
-            tween: Tween<double>(begin: 0, end: 1),
-            duration: Duration(seconds: 1),
-            builder: (context, value, child) {
-              return Opacity(
-                opacity: value,
-                child: child,
-              );
-            },
+          ),
+          SizedBox(
+            height: 150,
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            child: TweenAnimationBuilder(
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    height: photoheight,
-                    width: photowidth,
-                    child: Image.asset('assets/windowimage3.jpg',
-                        fit: BoxFit.cover),
+            child: Row(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 40),
+                  height: photoheight,
+                  width: photowidth,
+                  child:
+                      Image.asset('assets/windowimage3.jpg', fit: BoxFit.cover),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border(
+                      top: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                      bottom: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                      right: BorderSide(
+                        color: Colors.teal[300].withOpacity(0.8),
+                        width: 4,
+                      ),
+                    ),
                   ),
-                  Container(
-                    color: Colors.cyan[200].withOpacity(0.9),
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Text(
-                            centrename[2],
-                            style: TextStyle(
-                              fontSize: 25,
-                            ),
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Text(
+                          centrename[2],
+                          style: TextStyle(
+                            fontSize: 25,
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(15),
-                          width: 700,
-                          child: Text(
-                            centreinfo[2],
-                            style: TextStyle(
-                              fontSize: 17,
-                            ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(15),
+                        width: 700,
+                        child: Text(
+                          centreinfo[2],
+                          style: TextStyle(
+                            fontSize: 17,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                        child: MouseRegion(
+                          onHover: (event) {
+                            setState(() {
+                              button2textcolor = Colors.white;
+                            });
+                          },
+                          onExit: (event) {
+                            setState(() {
+                              button2textcolor = Colors.black;
+                            });
+                          },
                           child: FlatButton(
                             onPressed: () {},
+                            splashColor: Colors.white,
+                            hoverColor: Colors.black,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(3.0),
+                              borderRadius: BorderRadius.circular(1.0),
                               side: BorderSide(
                                 width: 2,
                                 color: Colors.black,
@@ -291,38 +482,30 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             child: Text(
                               "View",
                               style: TextStyle(
-                                color: Colors.black,
+                                color: button2textcolor,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              tween: Tween<double>(begin: 0, end: 1),
-              duration: Duration(seconds: 1),
-              builder: (context, value, child) {
-                return Opacity(
-                  opacity: value,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: value * 40),
-                    child: child,
-                  ),
-                );
-              },
+                ),
+              ],
             ),
           ),
-          TweenAnimationBuilder(
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              color: Colors.blueGrey[400].withOpacity(0.8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Column(
+          SizedBox(
+            height: 150,
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Container(
+                  color: Colors.blueGrey[400].withOpacity(0.8),
+                  child: Column(
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(10),
@@ -360,27 +543,19 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                       ),
                     ],
                   ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                    height: photoheight,
-                    width: photowidth,
-                    child: Image.asset('assets/windowimage4.jpg',
-                        fit: BoxFit.cover),
-                  ),
-                ],
-              ),
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(0, 0, 40, 0),
+                  height: photoheight,
+                  width: photowidth,
+                  child:
+                      Image.asset('assets/windowimage4.jpg', fit: BoxFit.cover),
+                ),
+              ],
             ),
-            tween: Tween<double>(begin: 0, end: 1),
-            duration: Duration(seconds: 1),
-            builder: (context, value, child) {
-              return Opacity(
-                opacity: value,
-                child: child,
-              );
-            },
           ),
           SizedBox(
-            height: 50,
+            height: 100,
           ),
         ],
       ),
