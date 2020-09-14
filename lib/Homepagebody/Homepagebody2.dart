@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
 
-
 class Homepagebody2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,7 +26,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.teal[200],
+      color: Colors.lightBlue[900].withOpacity(0.7),
       width: MediaQuery.of(context).size.width,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -36,7 +35,8 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
             TweenAnimationBuilder(
               child: SizedBox(),
               tween: Tween<double>(begin: 1, end: 0),
-              duration: Duration(milliseconds: 800),
+              duration: Duration(milliseconds: 500),
+              curve: Curves.easeIn,
               builder: (context, value, child) {
                 return Padding(
                   padding: EdgeInsets.only(

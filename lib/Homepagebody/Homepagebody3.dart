@@ -284,7 +284,10 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             width: MediaQuery.of(context).size.width,

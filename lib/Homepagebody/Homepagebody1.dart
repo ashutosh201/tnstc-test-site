@@ -362,7 +362,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 100,
+                  height: 150,
                 ),
                 Text(
                   "Aims & Objectives",

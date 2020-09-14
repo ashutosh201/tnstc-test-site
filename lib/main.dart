@@ -7,6 +7,8 @@ import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
 import 'Data/Data.dart';
 
+GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
+
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
@@ -193,7 +195,6 @@ class _DesktopHomepageState extends State<DesktopHomepage> {
 }
 */
 
-/*
 class MobileHomepage extends StatefulWidget {
   @override
   _MobileHomepageState createState() => _MobileHomepageState();
@@ -205,6 +206,8 @@ class _MobileHomepageState extends State<MobileHomepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldState,
+      /*
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(65),
         child: AppBar(
@@ -232,11 +235,19 @@ class _MobileHomepageState extends State<MobileHomepage> {
           centerTitle: true,
         ),
       ),
+      */
       drawer: Theme(
         data: ThemeData.dark(),
         child: Drawer(
           child: Sidemenu(),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        child: Icon(Icons.format_list_bulleted),
+        onPressed: () {
+          _scaffoldState.currentState.openDrawer();
+        },
       ),
       body: PageView(
         onPageChanged: (int page) {
@@ -247,87 +258,92 @@ class _MobileHomepageState extends State<MobileHomepage> {
             });
           } else {
             backgroundcolor = Colors.teal[300];
-            setState(() {
-              if (page < 1) {
-                listreverse = false;
-              } else if (page > 1) {
-                listreverse = true;
-              }
-            });
+            setState(() {});
           }
         },
         scrollDirection: Axis.vertical,
         children: <Widget>[
-          MobileHomepagebody1(),
+          Stack(
+            children: [
+              MobileHomepagebody1(),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 50,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                  margin: EdgeInsets.zero,
+                  elevation: 10,
+                  color: Colors.blueGrey[600].withOpacity(0.8),
+                  child: Center(
+                    child: Text(
+                      "Tamil Nadu Science & Technology Centre",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 21,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
           AnimatedContainer(
             duration: Duration(milliseconds: 200),
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             color: backgroundcolor,
-            child: SingleChildScrollView(
-              reverse: listreverse,
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 50,
-                  ),
-                  MobileHomepagebody3(),
-                  SizedBox(
-                    height: 50,
-                  ),
-                ],
-              ),
-            ),
+            child: MobileHomepagebody3(),
           ),
           Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            child: SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 200,
-                  ),
-                  MobileHomepagebody2(),
-                  SizedBox(
-                    height: 200,
-                  ),
-                  Divider(
-                    height: 50,
-                    thickness: 2,
-                    indent: MediaQuery.of(context).size.width * 0.2,
-                    endIndent: MediaQuery.of(context).size.width * 0.2,
-                    color: Colors.grey,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    child: Stack(
-                      children: <Widget>[
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 300,
-                          child: Image.asset(
-                            'assets/homepagebackground4.jpg',
-                            fit: BoxFit.cover,
+            child: MobileHomepagebody2(),
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Divider(
+                  height: 50,
+                  thickness: 2,
+                  indent: MediaQuery.of(context).size.width * 0.2,
+                  endIndent: MediaQuery.of(context).size.width * 0.2,
+                  color: Colors.grey,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 300,
+                        child: Image.asset(
+                          'assets/homepagebackground4.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 270,
+                            color: Colors.lightBlue[900].withOpacity(0.7),
                           ),
-                        ),
-                        Column(
-                          children: <Widget>[
-                            Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 270,
-                              color: Colors.lightBlue[900].withOpacity(0.7),
-                            ),
-                            Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 30,
-                              color: Colors.teal.withOpacity(0.5),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 30,
+                            color: Colors.teal.withOpacity(0.5),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],
@@ -335,8 +351,8 @@ class _MobileHomepageState extends State<MobileHomepage> {
     );
   }
 }
-*/
 
+/*
 class MobileHomepage extends StatefulWidget {
   @override
   _MobileHomepageState createState() => _MobileHomepageState();
@@ -346,6 +362,7 @@ class _MobileHomepageState extends State<MobileHomepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldState,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(65),
         child: AppBar(
@@ -379,6 +396,9 @@ class _MobileHomepageState extends State<MobileHomepage> {
           child: Sidemenu(),
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        _scaffoldState.currentState.openDrawer();
+      }),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -436,3 +456,4 @@ class _MobileHomepageState extends State<MobileHomepage> {
     );
   }
 }
+*/
