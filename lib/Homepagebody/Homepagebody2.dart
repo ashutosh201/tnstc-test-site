@@ -26,7 +26,6 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.lightBlue[900].withOpacity(0.7),
       width: MediaQuery.of(context).size.width,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -49,7 +48,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
               height: cardheight,
               width: cardwidth,
               child: Card(
-                elevation: 5,
+                elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.0),
                 ),
@@ -82,7 +81,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                             color: Colors.white,
                           ),
                         ),
-                        color: Colors.blue.withOpacity(0.7),
+                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -93,7 +92,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
               height: cardheight,
               width: cardwidth,
               child: Card(
-                elevation: 5,
+                elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.0),
                 ),
@@ -126,7 +125,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                             color: Colors.white,
                           ),
                         ),
-                        color: Colors.blue.withOpacity(0.7),
+                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -137,7 +136,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
               height: cardheight,
               width: cardwidth,
               child: Card(
-                elevation: 5,
+                elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.0),
                 ),
@@ -170,7 +169,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                             color: Colors.white,
                           ),
                         ),
-                        color: Colors.blue.withOpacity(0.7),
+                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -181,7 +180,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
               height: cardheight,
               width: cardwidth,
               child: Card(
-                elevation: 5,
+                elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.0),
                 ),
@@ -214,7 +213,7 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                             color: Colors.white,
                           ),
                         ),
-                        color: Colors.blue.withOpacity(0.7),
+                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -234,8 +233,8 @@ class DesktopHomepagebody2 extends StatefulWidget {
 }
 
 class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
-  double photoheight = 300;
-  double photowidth = 500;
+  double photoheight = 400;
+  double photowidth = 650;
   Color button1textcolor = Colors.black;
   Color button2textcolor = Colors.black;
   @override
@@ -270,15 +269,15 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   decoration: BoxDecoration(
                     border: Border(
                       top: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                       bottom: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                       right: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                     ),
@@ -301,6 +300,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                           centreinfo[0],
                           style: TextStyle(
                             fontSize: 17,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ),
@@ -387,7 +387,8 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               color: Colors.white,
                             ),
                           ),
-                          color: Colors.blue.withOpacity(0.8),
+                          color: Colors.lightBlue[900],
+                          splashColor: Colors.white,
                         ),
                       ),
                     ],
@@ -421,15 +422,15 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   decoration: BoxDecoration(
                     border: Border(
                       top: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                       bottom: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                       right: BorderSide(
-                        color: Colors.teal[300].withOpacity(0.8),
+                        color: Colors.teal,
                         width: 4,
                       ),
                     ),
@@ -452,6 +453,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                           centreinfo[2],
                           style: TextStyle(
                             fontSize: 17,
+                            color: Colors.grey[700],
                           ),
                         ),
                       ),
@@ -538,7 +540,8 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               color: Colors.white,
                             ),
                           ),
-                          color: Colors.blue.withOpacity(0.8),
+                          color: Colors.lightBlue[900],
+                          splashColor: Colors.white,
                         ),
                       ),
                     ],

@@ -6,13 +6,14 @@ import 'Homepagebody/Homepagebody2.dart';
 import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
 import 'Data/Data.dart';
+import 'package:tnstc_test_site/Pages/Centre1.dart';
 
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: HomePage(),
+    home: DesktopCentre1(),
   ));
 }
 
@@ -201,6 +202,7 @@ class MobileHomepage extends StatefulWidget {
 }
 
 class _MobileHomepageState extends State<MobileHomepage> {
+  PageController _pageControllerMobile = PageController(initialPage: 0);
   Color backgroundcolor = Colors.teal[300];
   bool listreverse = false;
   @override
@@ -250,10 +252,11 @@ class _MobileHomepageState extends State<MobileHomepage> {
         },
       ),
       body: PageView(
+        controller: _pageControllerMobile,
         onPageChanged: (int page) {
           if (page == 1) {
             backgroundcolor = Colors.transparent;
-            Future.delayed(Duration(milliseconds: 400), () {
+            Future.delayed(Duration(milliseconds: 150), () {
               setState(() {});
             });
           } else {
@@ -267,30 +270,82 @@ class _MobileHomepageState extends State<MobileHomepage> {
             children: [
               MobileHomepagebody1(),
               Container(
-                width: MediaQuery.of(context).size.width,
-                height: 50,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(0),
-                  ),
-                  margin: EdgeInsets.zero,
-                  elevation: 10,
-                  color: Colors.blueGrey[600].withOpacity(0.8),
-                  child: Center(
-                    child: Text(
-                      "Tamil Nadu Science & Technology Centre",
-                      style: TextStyle(
+                child: Column(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 50,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0),
+                        ),
+                        margin: EdgeInsets.zero,
+                        elevation: 10,
+                        color: Colors.blueGrey[600].withOpacity(0.5),
+                        child: Center(
+                          child: Text(
+                            "Tamil Nadu Science & Technology Centre",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 21,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 360,
+                    ),
+                    Divider(
+                      color: Colors.white,
+                      thickness: 2,
+                      height: 120,
+                      indent: 40,
+                      endIndent: 40,
+                    ),
+                    Container(
+                      height: 40,
+                      child: FloatingActionButton.extended(
+                        onPressed: () {
+                          _pageControllerMobile.animateToPage(2,
+                              duration: Duration(milliseconds: 1200),
+                              curve: Curves.decelerate);
+                        },
+                        backgroundColor: Colors.teal,
+                        label: Text("Our Centres"),
+                      ),
+                      /*
+                  child: FlatButton(
+                    onPressed: () {},
+                    splashColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(1.0),
+                      side: BorderSide(
+                        width: 3,
                         color: Colors.white,
-                        fontSize: 21,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 50, vertical: 5),
+                      child: Text(
+                        "Our Centres",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                        ),
                       ),
                     ),
                   ),
+                  */
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
           AnimatedContainer(
-            duration: Duration(milliseconds: 200),
+            duration: Duration(milliseconds: 250),
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             color: backgroundcolor,

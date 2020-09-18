@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
@@ -364,6 +365,161 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
                 SizedBox(
                   height: 150,
                 ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 40),
+                    child: Text(
+                      "Aims &",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 40),
+                    child: Text(
+                      "Objectives",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  child: AnimatedBuilder(
+                    animation: _animationcontroller,
+                    builder: (context, child) {
+                      return Opacity(
+                        opacity: _opacity.value,
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            aims[aimindex],
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  child: FloatingActionButton.extended(
+                    onPressed: () {},
+                    backgroundColor: Colors.teal,
+                    label: Text(
+                      "Details",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+/*
+class MobileHomepagebody1 extends StatefulWidget {
+  @override
+  _MobileHomepagebody1State createState() => _MobileHomepagebody1State();
+}
+
+class _MobileHomepagebody1State extends State<MobileHomepagebody1>
+    with SingleTickerProviderStateMixin {
+  PageController pagecontroller = PageController(initialPage: 0);
+  int imagewindowindex = 0;
+  int aimindex = 0;
+  double button1opacity = 0.5, button2opacity = 1;
+  AnimationController _animationcontroller;
+  Animation _opacity;
+  @override
+  void initState() {
+    super.initState();
+    _animationcontroller = AnimationController(
+      duration: Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _opacity = Tween<double>(begin: 0, end: 1).animate(_animationcontroller);
+    _animationcontroller.addListener(() {});
+    _animationcontroller.forward();
+    _animationcontroller.addStatusListener((status) {
+      if (status == AnimationStatus.dismissed) {
+        if (aimindex == 0) {
+          aimindex = 1;
+        } else {
+          aimindex = 0;
+        }
+        _animationcontroller.forward();
+      }
+      if (status == AnimationStatus.completed) {
+        Future.delayed(Duration(seconds: 4), () {
+          _animationcontroller.reverse();
+        });
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      child: Stack(
+        children: <Widget>[
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/homepagebackground.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.lightBlue[900].withOpacity(0.8),
+                  Colors.lightBlue[900].withOpacity(0.3)
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 150,
+                ),
                 Text(
                   "Aims & Objectives",
                   style: TextStyle(
@@ -519,3 +675,4 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
     );
   }
 }
+*/
