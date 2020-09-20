@@ -103,6 +103,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -117,6 +118,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -131,6 +133,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -145,6 +148,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -159,6 +163,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -173,6 +178,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
         ListTile(
@@ -187,6 +193,7 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
               color: Colors.white,
             ),
           ),
+          hoverColor: Colors.lightBlue[900],
           onTap: () {},
         ),
       ],

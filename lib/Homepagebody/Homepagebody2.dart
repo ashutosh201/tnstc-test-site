@@ -265,8 +265,11 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   padding: EdgeInsets.only(left: 40),
                   height: photoheight,
                   width: photowidth,
-                  child:
-                      Image.asset('assets/windowimage1.jpg', fit: BoxFit.cover),
+                  child: Hero(
+                    tag: "centre1image",
+                    child: Image.asset('assets/windowimage1.jpg',
+                        fit: BoxFit.cover),
+                  ),
                 ),
                 Container(
                   decoration: BoxDecoration(
