@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
 import 'package:tnstc_test_site/Pages/Centre1.dart';
-
+import 'package:tnstc_test_site/Pages/Centre2.dart';
+import 'package:tnstc_test_site/Pages/Centre3.dart';
+import 'package:tnstc_test_site/Pages/Centre4.dart';
 class Homepagebody2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -323,10 +325,10 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                           },
                           child: FlatButton(
                             onPressed: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) {
-                                return DesktopCentre1();
-                              }));
+                              Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre1())
+                              );
                             },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
@@ -389,7 +391,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre2())
+                              );
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
@@ -480,7 +487,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             });
                           },
                           child: FlatButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre3())
+                              );
+                            },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
                             shape: RoundedRectangleBorder(
@@ -542,7 +554,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre4())
+                              );
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(

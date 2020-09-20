@@ -56,7 +56,7 @@ class _DesktopFooterState extends State<DesktopFooter> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.5,
                   height: 300,
                   child: Column(
                     children: [
