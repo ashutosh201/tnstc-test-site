@@ -4,6 +4,7 @@ import 'package:tnstc_test_site/Pages/Centre1.dart';
 import 'package:tnstc_test_site/Pages/Centre2.dart';
 import 'package:tnstc_test_site/Pages/Centre3.dart';
 import 'package:tnstc_test_site/Pages/Centre4.dart';
+
 class Homepagebody2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -325,10 +326,10 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                           },
                           child: FlatButton(
                             onPressed: () {
-                              Navigator.push (
-                            context,
-                            MaterialPageRoute(builder: (context) => DesktopCentre1())
-                              );
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => DesktopCentre1()));
                             },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
@@ -392,10 +393,10 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
                         child: FlatButton(
                           onPressed: () {
-                            Navigator.push (
-                            context,
-                            MaterialPageRoute(builder: (context) => DesktopCentre2())
-                              );
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DesktopCentre2()));
                           },
                           child: Text(
                             "View",
@@ -414,8 +415,11 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   padding: EdgeInsets.fromLTRB(0, 0, 40, 0),
                   height: photoheight,
                   width: photowidth,
-                  child:
-                      Image.asset('assets/windowimage2.jpg', fit: BoxFit.cover),
+                  child: Hero(
+                    tag: 'centre2image',
+                    child: Image.asset('assets/windowimage2.jpg',
+                        fit: BoxFit.cover),
+                  ),
                 ),
               ],
             ),
@@ -431,8 +435,11 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   padding: EdgeInsets.only(left: 40),
                   height: photoheight,
                   width: photowidth,
-                  child:
-                      Image.asset('assets/windowimage3.jpg', fit: BoxFit.cover),
+                  child: Hero(
+                    tag: 'centre3image',
+                    child: Image.asset('assets/windowimage3.jpg',
+                        fit: BoxFit.cover),
+                  ),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -488,10 +495,10 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                           },
                           child: FlatButton(
                             onPressed: () {
-                              Navigator.push (
-                            context,
-                            MaterialPageRoute(builder: (context) => DesktopCentre3())
-                              );
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => DesktopCentre3()));
                             },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
@@ -555,10 +562,10 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
                         child: FlatButton(
                           onPressed: () {
-                            Navigator.push (
-                            context,
-                            MaterialPageRoute(builder: (context) => DesktopCentre4())
-                              );
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DesktopCentre4()));
                           },
                           child: Text(
                             "View",
@@ -577,8 +584,11 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   padding: EdgeInsets.fromLTRB(0, 0, 40, 0),
                   height: photoheight,
                   width: photowidth,
-                  child:
-                      Image.asset('assets/windowimage4.jpg', fit: BoxFit.cover),
+                  child: Hero(
+                    tag: 'centre4image',
+                    child: Image.asset('assets/windowimage4.jpg',
+                        fit: BoxFit.cover),
+                  ),
                 ),
               ],
             ),

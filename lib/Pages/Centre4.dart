@@ -28,7 +28,7 @@ class _DesktopCentre4State extends State<DesktopCentre4> {
               Container(
                 width: MediaQuery.of(context).size.width * 0.2,
                 height: MediaQuery.of(context).size.height,
-                color: Colors.teal,
+                color: Colors.teal.withOpacity(0.9),
                 child: DesktopSidemenu(),
               ),
               Container(
@@ -41,9 +41,12 @@ class _DesktopCentre4State extends State<DesktopCentre4> {
                         width: MediaQuery.of(context).size.width * 0.8,
                         height: MediaQuery.of(context).size.width * 0.4,
                         padding: EdgeInsets.symmetric(vertical: 60),
-                        child: Image.asset(
-                          'assets/windowimage1.jpg',
-                          fit: BoxFit.cover,
+                        child: Hero(
+                          tag: 'centre4image',
+                          child: Image.asset(
+                            'assets/windowimage4.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                       Container(
