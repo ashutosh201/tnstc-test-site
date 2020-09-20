@@ -32,7 +32,7 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
           return Container(
             width: MediaQuery.of(context).size.width,
             height: value,
-            color: Colors.teal[300].withOpacity(0.7),
+            color: Colors.teal.withOpacity(0.7),
             child: Center(
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,

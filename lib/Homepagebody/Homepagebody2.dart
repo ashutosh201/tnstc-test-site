@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
+import 'package:tnstc_test_site/Pages/Centre1.dart';
 
 class Homepagebody2 extends StatelessWidget {
   @override
@@ -262,8 +263,11 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                   padding: EdgeInsets.only(left: 40),
                   height: photoheight,
                   width: photowidth,
-                  child:
-                      Image.asset('assets/windowimage1.jpg', fit: BoxFit.cover),
+                  child: Hero(
+                    tag: "centre1image",
+                    child: Image.asset('assets/windowimage1.jpg',
+                        fit: BoxFit.cover),
+                  ),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -318,7 +322,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             });
                           },
                           child: FlatButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return DesktopCentre1();
+                              }));
+                            },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
                             shape: RoundedRectangleBorder(
