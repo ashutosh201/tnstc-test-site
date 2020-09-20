@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
 import 'package:tnstc_test_site/Pages/Centre1.dart';
 import 'package:tnstc_test_site/Pages/Centre2.dart';
+import 'package:tnstc_test_site/Pages/Centre3.dart';
+import 'package:tnstc_test_site/Pages/Centre4.dart';
 class Homepagebody2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,10 +18,7 @@ class Homepagebody2 extends StatelessWidget {
     );
   }
 }
-// Navigator.push (
-//                             context,
-//                             MaterialPageRoute(builder: (context) => DesktopCentre1())
-//                           );
+
 class MobileHomepagebody2 extends StatefulWidget {
   @override
   _MobileHomepagebody2State createState() => _MobileHomepagebody2State();
@@ -485,7 +484,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             });
                           },
                           child: FlatButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre3())
+                              );
+                            },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
                             shape: RoundedRectangleBorder(
@@ -547,7 +551,12 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push (
+                            context,
+                            MaterialPageRoute(builder: (context) => DesktopCentre4())
+                              );
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
