@@ -7,13 +7,14 @@ import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
 import 'Data/Data.dart';
 import 'package:tnstc_test_site/Pages/Centre1.dart';
+import 'package:tnstc_test_site/Pages/Centre2.dart';
 
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: DesktopCentre1(),
+    home: HomePage(),
   ));
 }
 
