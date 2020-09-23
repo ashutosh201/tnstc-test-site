@@ -26,7 +26,7 @@ class MobileHomepagebody2 extends StatefulWidget {
 }
 
 class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
-  double cardwidth = 383, cardheight = 420;
+  double cardwidth = 383, cardheight = 500;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -59,33 +59,47 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      height: 300,
+                      height: 350,
                       width: cardwidth,
                       child: Image.asset(
                         'assets/windowimage1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
+                    Divider(
+                      thickness: 2,
+                      height: 30,
+                      indent: 15,
+                      endIndent: 300,
+                      color: Colors.grey,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        centrename[0],
-                        style: TextStyle(
-                          fontSize: 15,
+                      padding: const EdgeInsets.only(left: 15, bottom: 15),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          centrename[0],
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View",
-                          style: TextStyle(
-                            color: Colors.white,
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Container(
+                        width: 150,
+                        padding: const EdgeInsets.only(left: 15),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "View",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
+                          color: Colors.lightBlue[900],
                         ),
-                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -103,33 +117,47 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      height: 300,
+                      height: 350,
                       width: cardwidth,
                       child: Image.asset(
                         'assets/windowimage2.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
+                    Divider(
+                      thickness: 2,
+                      height: 30,
+                      indent: 15,
+                      endIndent: 300,
+                      color: Colors.grey,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        centrename[1],
-                        style: TextStyle(
-                          fontSize: 15,
+                      padding: const EdgeInsets.only(left: 15, bottom: 15),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          centrename[1],
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View",
-                          style: TextStyle(
-                            color: Colors.white,
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Container(
+                        width: 150,
+                        padding: const EdgeInsets.only(left: 15),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "View",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
+                          color: Colors.lightBlue[900],
                         ),
-                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -147,33 +175,47 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      height: 300,
+                      height: 350,
                       width: cardwidth,
                       child: Image.asset(
                         'assets/windowimage3.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
+                    Divider(
+                      thickness: 2,
+                      height: 30,
+                      indent: 15,
+                      endIndent: 300,
+                      color: Colors.grey,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        centrename[2],
-                        style: TextStyle(
-                          fontSize: 15,
+                      padding: const EdgeInsets.only(left: 15, bottom: 15),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          centrename[2],
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View",
-                          style: TextStyle(
-                            color: Colors.white,
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Container(
+                        width: 150,
+                        padding: const EdgeInsets.only(left: 15),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "View",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
+                          color: Colors.lightBlue[900],
                         ),
-                        color: Colors.teal,
                       ),
                     ),
                   ],
@@ -191,33 +233,47 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      height: 300,
+                      height: 350,
                       width: cardwidth,
                       child: Image.asset(
                         'assets/windowimage4.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
+                    Divider(
+                      thickness: 2,
+                      height: 30,
+                      indent: 15,
+                      endIndent: 300,
+                      color: Colors.grey,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        centrename[3],
-                        style: TextStyle(
-                          fontSize: 15,
+                      padding: const EdgeInsets.only(left: 15, bottom: 15),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          centrename[3],
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 15, 270, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View",
-                          style: TextStyle(
-                            color: Colors.white,
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Container(
+                        width: 150,
+                        padding: const EdgeInsets.only(left: 15),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "View",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
+                          color: Colors.lightBlue[900],
                         ),
-                        color: Colors.teal,
                       ),
                     ),
                   ],
