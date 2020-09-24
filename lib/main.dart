@@ -3,6 +3,7 @@ import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Homepagebody/Homepagebody1.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 import 'package:tnstc_test_site/Pages/Centre3.dart';
+import 'package:tnstc_test_site/Pages/Centre4.dart';
 import 'Homepagebody/Homepagebody2.dart';
 import 'Homepagebody/Homepagebody3.dart';
 import 'Navbar/Navbar.dart';
@@ -15,7 +16,7 @@ GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: MobileCentre3(),
+    home: MobileCentre4(),
   ));
 }
 
