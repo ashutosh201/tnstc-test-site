@@ -3,6 +3,8 @@ import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 
+GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
+
 List<String> centre3Para = [
   "In order to cater to the needs of people in the western parts of Tamilnadu, permission was sought from the Government for the establishment of a Regional Science Centre at Coimbatore.",
   "There are four galleries in this centre viz., How Things Work, Textile Gallery and Fun Science Gallery along with 3D Theatre and a Science Park.",
@@ -65,7 +67,7 @@ class _DesktopCentre3State extends State<DesktopCentre3> {
                                     height: 50,
                                   ),
                                   Text(
-                                    "REGIONAL SCIENCE CENTRE - COIMBATORE",
+                                    "Regional Science Centre - Coimbatore",
                                     style: TextStyle(
                                       color: Colors.lightBlue[900],
                                       fontSize: 30,
@@ -121,7 +123,7 @@ class _DesktopCentre3State extends State<DesktopCentre3> {
                                         0.3 *
                                         0.65,
                                     child: Image.asset(
-                                      'assets/windowimage1.jpg',
+                                      'assets/windowimage3.jpg',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -189,6 +191,161 @@ class _DesktopCentre3State extends State<DesktopCentre3> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class MobileCentre3 extends StatefulWidget {
+  @override
+  _MobileCentre3State createState() => _MobileCentre3State();
+}
+
+class _MobileCentre3State extends State<MobileCentre3> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldState,
+      drawer: Theme(
+        data: ThemeData.dark(),
+        child: Drawer(
+          child: Sidemenu(),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        child: Icon(Icons.format_list_bulleted),
+        onPressed: () {
+          _scaffoldState.currentState.openDrawer();
+        },
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 20,
+              color: Colors.teal,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width * 0.6,
+              child: Image.asset(
+                'assets/windowimage3.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+              child: Card(
+                elevation: 20,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Text(
+                        "Regional Science Centre - Coimbatore",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 30,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        centre3Para[0],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre3Para[1],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre3Para[2],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre3Para[3],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.width * 0.4,
+                        child: Image.asset(
+                          'assets/windowimage3.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Divider(
+                        thickness: 2,
+                        height: 100,
+                        color: Colors.grey,
+                        indent: 40,
+                        endIndent: 40,
+                      ),
+                      Text(
+                        "Timings",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 25,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Science Exibition",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Halls of Science & Technology - 10.00 a.m to 05.45 p.m",
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
