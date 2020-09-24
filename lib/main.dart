@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Homepagebody/Homepagebody1.dart';
+import 'package:tnstc_test_site/Homepagebody/Homepagebody4.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 import 'package:tnstc_test_site/Pages/Centre3.dart';
 import 'package:tnstc_test_site/Pages/Centre4.dart';
@@ -16,7 +17,7 @@ GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: MobileCentre4(),
+    home: HomePage(),
   ));
 }
 
@@ -46,12 +47,14 @@ class DesktopHomepage extends StatefulWidget {
 }
 
 class _DesktopHomepageState extends State<DesktopHomepage> {
+  PageController _pageController = PageController(initialPage: 2);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: <Widget>[
           PageView(
+            controller: _pageController,
             scrollDirection: Axis.vertical,
             children: <Widget>[
               DesktopHomepagebody1(),
@@ -67,10 +70,14 @@ class _DesktopHomepageState extends State<DesktopHomepage> {
                 width: MediaQuery.of(context).size.width,
                 child: SingleChildScrollView(
                   child: Column(
-                    children: <Widget>[
+                    children: [
                       DesktopHomepagebody2(),
                       SizedBox(
-                        height: 200,
+                        height: 100,
+                      ),
+                      DesktopHomepagebody4(),
+                      SizedBox(
+                        height: 100,
                       ),
                       Divider(
                         height: 50,
