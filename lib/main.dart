@@ -14,7 +14,7 @@ GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 void main() {
   runApp(MaterialApp(
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: MobileCentre1(),
+    home: MobileCentre2(),
   ));
 }
 

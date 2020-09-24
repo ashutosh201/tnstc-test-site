@@ -3,6 +3,8 @@ import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 
+GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
+
 List<String> centre2Para = [
   "Anna Science Centre, Tiruchirappalli has been rendering excellent and yeomen service to cater to the needs of younger generation and the general public of the region in the cause of education, taking up the objectives of Tamilnadu Science and Technology Centre, eversince it was dedicated to the Nation on June 10, 1999.",
   "The Government of Japan have donated the Planetarium Projector and its accessories worth 50 million Japanese Yen (Rs. 1.5 Crores) under the Cultural Grant-in-aid Scheme.",
@@ -65,7 +67,7 @@ class _DesktopCentre2State extends State<DesktopCentre2> {
                                     height: 50,
                                   ),
                                   Text(
-                                    "ANNA SCIENCE CENTRE -PLANETARIUM, TIRUCHIRAPPALLI",
+                                    "Anna Science Centre -Planetarium, Tiruchirappalli",
                                     style: TextStyle(
                                       color: Colors.lightBlue[900],
                                       fontSize: 30,
@@ -257,6 +259,226 @@ class _DesktopCentre2State extends State<DesktopCentre2> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class MobileCentre2 extends StatefulWidget {
+  @override
+  _MobileCentre2State createState() => _MobileCentre2State();
+}
+
+class _MobileCentre2State extends State<MobileCentre2> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldState,
+      drawer: Theme(
+        data: ThemeData.dark(),
+        child: Drawer(
+          child: Sidemenu(),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        child: Icon(Icons.format_list_bulleted),
+        onPressed: () {
+          _scaffoldState.currentState.openDrawer();
+        },
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 20,
+              color: Colors.teal,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width * 0.6,
+              child: Image.asset(
+                'assets/windowimage2.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+              child: Card(
+                elevation: 20,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Text(
+                        "Anna Science Centre -Planetarium, Tiruchirappalli",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 30,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        centre2Para[0],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre2Para[1],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre2Para[2],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre2Para[3],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.width * 0.4,
+                        child: Image.asset(
+                          'assets/windowimage2.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Divider(
+                        thickness: 2,
+                        height: 100,
+                        color: Colors.grey,
+                        indent: 40,
+                        endIndent: 40,
+                      ),
+                      Text(
+                        "Timings",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 25,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Planetarium programme",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal:
+                                MediaQuery.of(context).size.width * 0.15),
+                        child: Table(
+                          border: TableBorder.symmetric(
+                            inside: BorderSide(
+                              width: 2,
+                              color: Colors.grey,
+                            ),
+                          ),
+                          children: [
+                            TableRow(
+                              children: [
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(" English"),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(" Tamil"),
+                                ),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(" 11.45 A.M."),
+                                Text(" 10.30 A.M."),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(" 02.15 P.M."),
+                                Text(" 01.00 P.M."),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(""),
+                                Text(" 03.30 P.M."),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(""),
+                                Text(" 04.45 P.M."),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Science Exibition",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Halls of Science & Technology - 10.00 a.m to 05.45 p.m",
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
