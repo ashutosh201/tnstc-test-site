@@ -3,6 +3,8 @@ import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 
+GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
+
 List<String> centre1Para = [
   "The Planetarium is considered in the modern world as an Indoor - Universe. The Planetarium has provisions to execute diurnal, annual, latitudinal and precessional motions. The special effect projectors inside the Planetarium recreate some of the most awe-inspiring astronomical phenomena on the specially perforated aluminium inner dome. Multi-dimensional activities and multimedia projection arrangements which have been incorporated inside the sky theatre make the programme further lively and excited one. The Planetarium, which is fully computerised, can seat 236 persons at a time.",
   "From the date of inauguration of the Planetarium on May 11, 1988 by the then President of India, Planetarium has introduced so-far 35 Planetarium Programmes on the topics like Solar System, Life Cycle of Stars, Are We Alone in the Universe? Sky and Seasons, Comets, Our Universe, Man on the Moon, The Living Planet - Earth, Our Worlds and Beyond, etc."
@@ -229,6 +231,200 @@ class _DesktopCentre1State extends State<DesktopCentre1> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class MobileCentre1 extends StatefulWidget {
+  @override
+  _MobileCentre1State createState() => _MobileCentre1State();
+}
+
+class _MobileCentre1State extends State<MobileCentre1> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldState,
+      drawer: Theme(
+        data: ThemeData.dark(),
+        child: Drawer(
+          child: Sidemenu(),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        child: Icon(Icons.format_list_bulleted),
+        onPressed: () {
+          _scaffoldState.currentState.openDrawer();
+        },
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 20,
+              color: Colors.teal,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width * 0.6,
+              child: Image.asset(
+                'assets/windowimage1.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+              child: Card(
+                elevation: 20,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Text(
+                        "Periyar Science & Technology Centre, Chennai",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 30,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        centre1Para[0],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        centre1Para[1],
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.width * 0.4,
+                        child: Image.asset(
+                          'assets/windowimage1.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Divider(
+                        thickness: 2,
+                        height: 100,
+                        color: Colors.grey,
+                        indent: 40,
+                        endIndent: 40,
+                      ),
+                      Text(
+                        "Timings",
+                        style: TextStyle(
+                          color: Colors.lightBlue[900],
+                          fontSize: 25,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Planetarium programme",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal:
+                                MediaQuery.of(context).size.width * 0.15),
+                        child: Table(
+                          border: TableBorder.symmetric(
+                            inside: BorderSide(
+                              width: 2,
+                              color: Colors.grey,
+                            ),
+                          ),
+                          children: [
+                            TableRow(
+                              children: [
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(" English"),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(" Tamil"),
+                                ),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(" 11:45 A.M."),
+                                Text(" 12:00 Noon"),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(" 1:15 P.M."),
+                                Text(" 2:30 P.M."),
+                              ],
+                            ),
+                            TableRow(
+                              children: [
+                                Text(" 3:45 P.M."),
+                                Text(" 4:30 P.M."),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        "Science Exibition",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Halls of Science & Technology - 10:00 A.M. to 5:45 P.M.",
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
