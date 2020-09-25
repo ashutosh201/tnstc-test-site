@@ -16,6 +16,10 @@ GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(
+      primarySwatch: Colors.teal,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
     title: 'TNSTC OFFICIAL WEBSITE',
     home: HomePage(),
   ));
@@ -47,7 +51,7 @@ class DesktopHomepage extends StatefulWidget {
 }
 
 class _DesktopHomepageState extends State<DesktopHomepage> {
-  PageController _pageController = PageController(initialPage: 2);
+  PageController _pageController = PageController(initialPage: 0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -372,6 +376,11 @@ class _MobileHomepageState extends State<MobileHomepage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
+                Container(
+                  height: MediaQuery.of(context).size.height - 350,
+                  width: MediaQuery.of(context).size.width,
+                  child: MobileHomepagebody4(),
+                ),
                 Divider(
                   height: 50,
                   thickness: 2,

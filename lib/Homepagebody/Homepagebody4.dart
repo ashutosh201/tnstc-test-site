@@ -1,6 +1,111 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Footer/Footer.dart';
 
+class MobileHomepagebody4 extends StatefulWidget {
+  @override
+  _MobileHomepagebody4State createState() => _MobileHomepagebody4State();
+}
+
+class _MobileHomepagebody4State extends State<MobileHomepagebody4> {
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      reverse: true,
+      child: Row(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width * 0.8,
+            height: 400,
+            child: Column(
+              children: [
+                Container(
+                  height: 50,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(0),
+                    ),
+                    margin: EdgeInsets.all(0),
+                    elevation: 20,
+                    child: Center(
+                      child: Text(
+                        "News & Announcements",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 350,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  color: Colors.lightBlue[900].withOpacity(0.4),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width * 0.15,
+            child: Icon(
+              Icons.arrow_forward_ios,
+              color: Colors.grey,
+            ),
+          ),
+          Container(
+            height: 400,
+            width: MediaQuery.of(context).size.width * 0.8,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 35,
+                  width: 250,
+                  child: FloatingActionButton.extended(
+                    onPressed: () {},
+                    heroTag: null,
+                    elevation: 20,
+                    label: Text("The Hall of Nuclear Power"),
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  height: 35,
+                  width: 250,
+                  child: FloatingActionButton.extended(
+                    onPressed: () {},
+                    heroTag: null,
+                    elevation: 20,
+                    label: Text("Right to Information Act"),
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  height: 35,
+                  width: 250,
+                  child: FloatingActionButton.extended(
+                    onPressed: () {},
+                    heroTag: null,
+                    elevation: 20,
+                    label: Text("Inspire Registration Method"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class DesktopHomepagebody4 extends StatefulWidget {
   @override
   _DesktopHomepagebody4State createState() => _DesktopHomepagebody4State();
