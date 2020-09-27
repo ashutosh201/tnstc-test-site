@@ -62,39 +62,96 @@ class _MobileHomepagebody4State extends State<MobileHomepagebody4> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: 35,
+                  height: 50,
                   width: 250,
-                  child: FloatingActionButton.extended(
-                    onPressed: () {},
-                    heroTag: null,
+                  child: Card(
                     elevation: 20,
-                    label: Text("The Hall of Nuclear Power"),
+                    color: Colors.blueGrey[600],
+                    child: Container(
+                      height: 50,
+                      width: 250,
+                      child: Center(
+                        child: Text(
+                          "The Hall of Nuclear Power",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border(
+                          left: BorderSide(
+                            width: 8,
+                            color: Colors.teal,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: 40,
                 ),
                 Container(
-                  height: 35,
+                  height: 50,
                   width: 250,
-                  child: FloatingActionButton.extended(
-                    onPressed: () {},
-                    heroTag: null,
+                  child: Card(
                     elevation: 20,
-                    label: Text("Right to Information Act"),
+                    color: Colors.blueGrey[600],
+                    child: Container(
+                      height: 50,
+                      width: 250,
+                      child: Center(
+                        child: Text(
+                          "Right to Information Act",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border(
+                          left: BorderSide(
+                            width: 8,
+                            color: Colors.teal,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: 40,
                 ),
                 Container(
-                  height: 35,
+                  height: 50,
                   width: 250,
-                  child: FloatingActionButton.extended(
-                    onPressed: () {},
-                    heroTag: null,
+                  child: Card(
                     elevation: 20,
-                    label: Text("Inspire Registration Method"),
+                    color: Colors.blueGrey[600],
+                    child: Container(
+                      height: 50,
+                      width: 250,
+                      child: Center(
+                        child: Text(
+                          "Inspire Registration Method",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border(
+                          left: BorderSide(
+                            width: 8,
+                            color: Colors.teal,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -174,42 +231,55 @@ class _DesktopHomepagebody4State extends State<DesktopHomepagebody4> {
                   height: box1side,
                   width: box1side,
                   child: Card(
-                    color: Colors.teal.withOpacity(0.8),
+                    color: Colors.blueGrey[600],
                     elevation: 20,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        AnimatedDefaultTextStyle(
-                          duration: Duration(milliseconds: 200),
-                          child: Text("The Hall of"),
-                          style: box1text
-                              ? TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                )
-                              : TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 200),
+                      height: box1side,
+                      width: box1side,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            width: 8,
+                            color: Colors.teal,
+                          ),
                         ),
-                        AnimatedDefaultTextStyle(
-                          duration: Duration(milliseconds: 200),
-                          child: Text("Nuclear Power"),
-                          style: box1text
-                              ? TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                )
-                              : TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                        ),
-                      ],
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          AnimatedDefaultTextStyle(
+                            duration: Duration(milliseconds: 200),
+                            child: Text("The Hall of"),
+                            style: box1text
+                                ? TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                : TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                          ),
+                          AnimatedDefaultTextStyle(
+                            duration: Duration(milliseconds: 200),
+                            child: Text("Nuclear Power"),
+                            style: box1text
+                                ? TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                : TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   /*
@@ -308,57 +378,70 @@ class _DesktopHomepagebody4State extends State<DesktopHomepagebody4> {
                   height: box3side,
                   width: box3side,
                   child: Card(
-                    color: Colors.teal.withOpacity(0.8),
+                    color: Colors.blueGrey[600],
                     elevation: 20,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        AnimatedDefaultTextStyle(
-                          duration: Duration(milliseconds: 200),
-                          child: Text("Inspire"),
-                          style: box3text
-                              ? TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                )
-                              : TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 200),
+                      height: box3side,
+                      width: box3side,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            width: 8,
+                            color: Colors.teal,
+                          ),
                         ),
-                        AnimatedDefaultTextStyle(
-                          duration: Duration(milliseconds: 200),
-                          child: Text("Registration"),
-                          style: box3text
-                              ? TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                )
-                              : TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                        ),
-                        AnimatedDefaultTextStyle(
-                          duration: Duration(milliseconds: 200),
-                          child: Text("Method"),
-                          style: box3text
-                              ? TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                )
-                              : TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                        ),
-                      ],
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          AnimatedDefaultTextStyle(
+                            duration: Duration(milliseconds: 200),
+                            child: Text("Inspire"),
+                            style: box3text
+                                ? TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                : TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                          ),
+                          AnimatedDefaultTextStyle(
+                            duration: Duration(milliseconds: 200),
+                            child: Text("Registration"),
+                            style: box3text
+                                ? TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                : TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                          ),
+                          AnimatedDefaultTextStyle(
+                            duration: Duration(milliseconds: 200),
+                            child: Text("Method"),
+                            style: box3text
+                                ? TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  )
+                                : TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   /*

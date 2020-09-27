@@ -3,6 +3,21 @@ import 'package:tnstc_test_site/Footer/Footer.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
 import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 
+class Centre1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return DesktopCentre1();
+        } else {
+          return MobileCentre1();
+        }
+      },
+    );
+  }
+}
+
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 List<String> centre1Para = [
@@ -270,9 +285,12 @@ class _MobileCentre1State extends State<MobileCentre1> {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width * 0.6,
-              child: Image.asset(
-                'assets/windowimage1.jpg',
-                fit: BoxFit.cover,
+              child: Hero(
+                tag: "centre1imagemobile",
+                child: Image.asset(
+                  'assets/windowimage1.jpg',
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Padding(

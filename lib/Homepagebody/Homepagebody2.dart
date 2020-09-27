@@ -61,9 +61,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                     Container(
                       height: 350,
                       width: cardwidth,
-                      child: Image.asset(
-                        'assets/windowimage1.jpg',
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: "centre1imagemobile",
+                        child: Image.asset(
+                          'assets/windowimage1.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Divider(
@@ -91,7 +94,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                         width: 150,
                         padding: const EdgeInsets.only(left: 15),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Centre1()));
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
@@ -119,9 +127,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                     Container(
                       height: 350,
                       width: cardwidth,
-                      child: Image.asset(
-                        'assets/windowimage2.jpg',
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: "centre2imagemobile",
+                        child: Image.asset(
+                          'assets/windowimage2.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Divider(
@@ -149,7 +160,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                         width: 150,
                         padding: const EdgeInsets.only(left: 15),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Centre2()));
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
@@ -177,9 +193,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                     Container(
                       height: 350,
                       width: cardwidth,
-                      child: Image.asset(
-                        'assets/windowimage3.jpg',
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: "centre3imagemobile",
+                        child: Image.asset(
+                          'assets/windowimage3.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Divider(
@@ -207,7 +226,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                         width: 150,
                         padding: const EdgeInsets.only(left: 15),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Centre3()));
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
@@ -235,9 +259,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                     Container(
                       height: 350,
                       width: cardwidth,
-                      child: Image.asset(
-                        'assets/windowimage4.jpg',
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: "centre4imagemobile",
+                        child: Image.asset(
+                          'assets/windowimage4.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Divider(
@@ -265,7 +292,12 @@ class _MobileHomepagebody2State extends State<MobileHomepagebody2> {
                         width: 150,
                         padding: const EdgeInsets.only(left: 15),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Centre4()));
+                          },
                           child: Text(
                             "View",
                             style: TextStyle(
@@ -385,7 +417,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => DesktopCentre1()));
+                                      builder: (context) => Centre1()));
                             },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
@@ -452,7 +484,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => DesktopCentre2()));
+                                    builder: (context) => Centre2()));
                           },
                           child: Text(
                             "View",
@@ -554,7 +586,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => DesktopCentre3()));
+                                      builder: (context) => Centre3()));
                             },
                             splashColor: Colors.white,
                             hoverColor: Colors.black,
@@ -621,7 +653,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => DesktopCentre4()));
+                                    builder: (context) => Centre4()));
                           },
                           child: Text(
                             "View",
