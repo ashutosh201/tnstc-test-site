@@ -7,10 +7,13 @@ import 'package:tnstc_test_site/Pages/Centre3.dart';
 import 'package:tnstc_test_site/Pages/Centre4.dart';
 import 'Homepagebody/Homepagebody2.dart';
 import 'Homepagebody/Homepagebody3.dart';
-import 'Navbar/Navbar.dart';
+import 'package:tnstc_test_site/Navbar/Navbar.dart';
 import 'Data/Data.dart';
 import 'package:tnstc_test_site/Pages/Centre1.dart';
 import 'package:tnstc_test_site/Pages/Centre2.dart';
+import 'package:tnstc_test_site/about.dart';
+import 'package:tnstc_test_site/contact_us.dart';
+
 
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
@@ -22,6 +25,12 @@ void main() {
     ),
     title: 'TNSTC OFFICIAL WEBSITE',
     home: HomePage(),
+    initialRoute: '/home',
+    routes: {
+      '/home':(context) => HomePage(),
+      '/about':(context) => About(),
+      '/contact_us':(context) => contact_us(),
+    },
   ));
 }
 
