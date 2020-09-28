@@ -17,11 +17,37 @@ class _contact_usState extends State<contact_us> {
           Navbar(),
           contact_us_body(),
           Divider(
-            height: 50,
+            height: 40,
             thickness: 2,
             indent: MediaQuery.of(context).size.width * 0.2,
             endIndent: MediaQuery.of(context).size.width * 0.2,
             color: Colors.grey,
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: SizedBox(
+                  width: 100,
+                  height: 40,
+                  child: FlatButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    child: Text(
+                      "Home",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    color: Colors.blue.withOpacity(0.7),
+
+
+                  ),
+                ),
+              ),
+            ],
           ),
         ]
       ),
