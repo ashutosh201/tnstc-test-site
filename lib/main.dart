@@ -24,12 +24,12 @@ void main() {
     ),
     title: 'TNSTC OFFICIAL WEBSITE',
     home: HomePage(),
-    //initialRoute: '/home',
-    //routes: {
-    //  '/home': (context) => HomePage(),
-    //  '/about': (context) => About(),
-    //  '/contact_us': (context) => contact_us(),
-    //},
+    initialRoute: '/home',
+    routes: {
+      '/home': (context) => HomePage(),
+      '/about': (context) => About(),
+      '/contact_us': (context) => ContactUs(),
+    },
   ));
 }
 
