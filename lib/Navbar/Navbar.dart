@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:tnstc_test_site/Pages/ContactUs.dart';
+import 'package:tnstc_test_site/Pages/about.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -50,7 +51,10 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                   Container(
                     padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
                     child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => About()));
+                      },
                       child: Text(
                         "About TNSTC",
                         style: TextStyle(
@@ -90,7 +94,13 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                     padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
                     height: 30,
                     child: FloatingActionButton.extended(
-                      onPressed: () {},
+                      heroTag: null,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ContactUs()));
+                      },
                       backgroundColor: Colors.teal,
                       label: Text(
                         "Contact Us",

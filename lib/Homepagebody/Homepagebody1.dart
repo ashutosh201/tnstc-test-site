@@ -163,6 +163,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                       ),
                       Container(
                         child: FloatingActionButton.extended(
+                          heroTag: null,
                           onPressed: () {},
                           backgroundColor: Colors.teal,
                           label: Text(
@@ -240,6 +241,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                                 opacity: button1opacity,
                                 duration: Duration(milliseconds: 300),
                                 child: FloatingActionButton(
+                                  heroTag: null,
                                   onPressed: () {
                                     if (imagewindowindex > 0) {
                                       imagewindowindex--;
@@ -257,6 +259,7 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                                 opacity: button2opacity,
                                 duration: Duration(milliseconds: 300),
                                 child: FloatingActionButton(
+                                  heroTag: null,
                                   onPressed: () {
                                     if (imagewindowindex < 3) {
                                       imagewindowindex++;
@@ -422,6 +425,7 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
                 ),
                 Container(
                   child: FloatingActionButton.extended(
+                    heroTag: null,
                     onPressed: () {},
                     backgroundColor: Colors.teal,
                     label: Text(
