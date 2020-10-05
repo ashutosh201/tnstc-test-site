@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tnstc_test_site/Pages/ContactUs.dart';
+import 'package:tnstc_test_site/Pages/Contact.dart';
 import 'package:tnstc_test_site/Pages/about.dart';
 
 class Navbar extends StatelessWidget {
@@ -99,7 +99,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ContactUs()));
+                                builder: (context) => ContactPage()));
                       },
                       backgroundColor: Colors.teal,
                       label: Text(
