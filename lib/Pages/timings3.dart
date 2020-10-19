@@ -21,103 +21,71 @@ class DesktopTiming3 extends StatefulWidget {
 }
 
 class _DesktopTiming3State extends State<DesktopTiming3> {
-
   Widget timings3data() => DataTable(
-    columns: [
-      DataColumn(
-        label: Text(
-          "Science Exhibition",
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w900,
-              color: Colors.black),
-        ),
-      ),
-
-    ],
-    rows: <DataRow>[
-      DataRow(
-        cells: <DataCell>[
-          DataCell(Text(
-            "Halls of Science & Technology                10.00 a.m to 05.45 p.m",
-            style: TextStyle(
-              fontSize: 15.0,
-              fontWeight: FontWeight.w500,
+        columns: [
+          DataColumn(
+            label: Text(
+              "Science Exhibition",
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.black),
             ),
-          )),
+          ),
         ],
-      ),
-    ],
-  );
+        rows: <DataRow>[
+          DataRow(
+            cells: <DataCell>[
+              DataCell(Text(
+                "Halls of Science & Technology                10.00 a.m to 05.45 p.m",
+                style: TextStyle(
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
+                ),
+              )),
+            ],
+          ),
+        ],
+      );
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.9,
-      child: Stack(
-        children: <Widget>[
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.9,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/contact_us2.jpg'),
-                fit: BoxFit.cover,
-              ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: Text(
+              "DISTRICT SCIENCE CENTRE, VELLORE - 632009",
+              style: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.black),
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.9,
-            child: Column(
-              children: [
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0,20,0,20),
-                    child: Text(
-                      "DISTRICT SCIENCE CENTRE, VELLORE - 632009",
-                      style: TextStyle(
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Container(
+                child: timings3data(),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.6,
+                width: MediaQuery.of(context).size.width * 0.5,
+                padding: EdgeInsets.only(right: 20),
+                child: Card(
+                  elevation: 20,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.6,
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Image.asset(
+                      'assets/windowimage3.jpg',
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Row(
-                    children: <Widget>[
-
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(30,0,0,100),
-                        child: Container(
-                          child: timings3data(),
-                        ),
-                      ),
-
-                      Container(
-                        height: MediaQuery.of(context).size.height * 0.6,
-                        width: MediaQuery.of(context).size.width * 0.5,
-                        child: Card(
-                          child: Stack(
-                            children: <Widget>[
-                              Container(
-                                height: MediaQuery.of(context).size.height * 0.6,
-                                width: MediaQuery.of(context).size.width * 0.5,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/district centre.jpg'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ]
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ],
       ),
@@ -136,5 +104,3 @@ class _MobileTiming3State extends State<MobileTiming3> {
     return Container();
   }
 }
-
-

@@ -6,6 +6,7 @@ import 'package:tnstc_test_site/Homepagebody/Sidemenu.dart';
 import 'package:tnstc_test_site/Pages/Centre3.dart';
 import 'package:tnstc_test_site/Pages/Centre4.dart';
 import 'package:tnstc_test_site/Pages/Contact.dart';
+import 'package:tnstc_test_site/Pages/timings.dart';
 import 'Homepagebody/Homepagebody2.dart';
 import 'Homepagebody/Homepagebody3.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
@@ -23,8 +24,8 @@ void main() {
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     title: 'TNSTC OFFICIAL WEBSITE',
-    home: HomePage(),
-    initialRoute: '/home',
+    home: Timing(),
+    //initialRoute: '/home',
     routes: {
       '/home': (context) => HomePage(),
       '/about': (context) => About(),
