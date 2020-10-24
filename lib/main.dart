@@ -23,7 +23,7 @@ void main() {
       primarySwatch: Colors.teal,
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
-    title: 'TNSTC OFFICIAL WEBSITE',
+    title: 'TNSTC  OFFICIAL  WEBSITE',
     home: Timing(),
     //initialRoute: '/home',
     routes: {
