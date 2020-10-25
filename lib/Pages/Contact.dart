@@ -324,10 +324,11 @@ class _DesktopContactPageState extends State<DesktopContactPage> {
                             ),
                           ),
                           decoration: BoxDecoration(
-                              border: Border.all(
-                            width: 5,
-                            color: Colors.teal,
-                          )),
+                            border: Border.all(
+                              width: 5,
+                              color: Colors.teal,
+                            ),
+                          ),
                         ),
                       ),
                     ),

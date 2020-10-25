@@ -87,8 +87,8 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.lightBlue[900].withOpacity(0.8),
-                  Colors.lightBlue[900].withOpacity(0.3)
+                  Colors.black.withOpacity(0.8),
+                  Colors.lightBlue[900].withOpacity(0.4)
                 ],
                 /*
                 colors: [
@@ -352,8 +352,8 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.lightBlue[900].withOpacity(0.8),
-                  Colors.lightBlue[900].withOpacity(0.3)
+                  Colors.black.withOpacity(0.8),
+                  Colors.lightBlue[900].withOpacity(0.4)
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
