@@ -233,18 +233,7 @@ class _DesktopCentre1State extends State<DesktopCentre1> {
               ),
             ],
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0),
-              ),
-              margin: EdgeInsets.zero,
-              elevation: 10,
-              color: Colors.blueGrey[600].withOpacity(0.8),
-              child: DesktopNavbar(),
-            ),
-          ),
+          DesktopNavbar(),
         ],
       ),
     );

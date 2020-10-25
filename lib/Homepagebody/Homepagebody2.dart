@@ -400,7 +400,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 10),
                         child: MouseRegion(
                           onHover: (event) {
                             setState(() {
@@ -478,7 +478,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(550, 0, 0, 10),
                         child: FlatButton(
                           onPressed: () {
                             Navigator.push(
@@ -569,7 +569,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 0),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 550, 10),
                         child: MouseRegion(
                           onHover: (event) {
                             setState(() {
@@ -647,7 +647,7 @@ class _DesktopHomepagebody2State extends State<DesktopHomepagebody2> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(550, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(550, 0, 0, 10),
                         child: FlatButton(
                           onPressed: () {
                             Navigator.push(

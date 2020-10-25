@@ -24,13 +24,13 @@ void main() {
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     title: 'TNSTC  OFFICIAL  WEBSITE',
-    home: Timing(),
+    home: HomePage(),
     //initialRoute: '/home',
-    routes: {
-      '/home': (context) => HomePage(),
-      '/about': (context) => About(),
-      '/contact_us': (context) => ContactPage(),
-    },
+    //routes: {
+    //  '/home': (context) => HomePage(),
+    //  '/about': (context) => About(),
+    //  '/contact_us': (context) => ContactPage(),
+    //},
   ));
 }
 
@@ -106,18 +106,7 @@ class _DesktopHomepageState extends State<DesktopHomepage> {
               ),
             ],
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0),
-              ),
-              margin: EdgeInsets.zero,
-              elevation: 10,
-              color: Colors.blueGrey[600].withOpacity(0.8),
-              child: DesktopNavbar(),
-            ),
-          ),
+          DesktopNavbar(),
         ],
       ),
     );
