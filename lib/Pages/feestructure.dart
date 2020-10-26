@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Navbar/Navbar.dart';
-import 'package:tnstc_test_site/Pages/feestructure/feestructure1.dart';
-import 'package:tnstc_test_site/Pages/feestructure/feestructure2.dart';
-import 'package:tnstc_test_site/Pages/feestructure/feestructure3.dart';
-import 'package:tnstc_test_site/Pages/feestructure/feestructure4.dart';
+import 'package:tnstc_test_site/Pages/feestructure1.dart';
+import 'package:tnstc_test_site/Pages/feestructure2.dart';
+import 'package:tnstc_test_site/Pages/feestructure3.dart';
+import 'package:tnstc_test_site/Pages/feestructure4.dart';
 
 class Feestructure extends StatefulWidget {
   @override
@@ -45,9 +45,9 @@ class _FeestructureState extends State<Feestructure> {
                           ),
                           decoration: BoxDecoration(
                               border: Border.all(
-                                width: 5,
-                                color: Colors.teal,
-                              )),
+                            width: 5,
+                            color: Colors.teal,
+                          )),
                         ),
                       ),
                     ),
@@ -89,7 +89,7 @@ class _FeestructureState extends State<Feestructure> {
                   color: Colors.grey,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0,0, 0, 30),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
                   child: FlatButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/home');
@@ -106,18 +106,7 @@ class _FeestructureState extends State<Feestructure> {
               ],
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(0),
-              ),
-              margin: EdgeInsets.zero,
-              elevation: 10,
-              color: Colors.blueGrey[600].withOpacity(0.8),
-              child: DesktopNavbar(),
-            ),
-          ),
+          DesktopNavbar(),
         ],
       ),
     );
