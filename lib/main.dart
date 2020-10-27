@@ -7,6 +7,7 @@ import 'package:tnstc_test_site/Pages/Aims_Objectives.dart';
 import 'package:tnstc_test_site/Pages/Centre3.dart';
 import 'package:tnstc_test_site/Pages/Centre4.dart';
 import 'package:tnstc_test_site/Pages/Contact.dart';
+import 'package:tnstc_test_site/Pages/Development.dart';
 import 'package:tnstc_test_site/Pages/Endowments.dart';
 import 'package:tnstc_test_site/Pages/Library.dart';
 import 'package:tnstc_test_site/Pages/feestructure.dart';
@@ -28,7 +29,7 @@ void main() {
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     title: 'TNSTC  OFFICIAL  WEBSITE',
-    home: Endowments(),
+    home: Development(),
     //initialRoute: '/home',
     //routes: {
     //  '/home': (context) => HomePage(),
