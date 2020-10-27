@@ -25,102 +25,107 @@ class DesktopNavbar extends StatefulWidget {
 class _DesktopNavbarState extends State<DesktopNavbar> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 50,
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(0),
-        ),
-        margin: EdgeInsets.zero,
-        elevation: 10,
-        color: Colors.blueGrey[600].withOpacity(0.8),
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 7),
-                child: Text(
-                  "Tamilnadu Science & Technology Centre",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
+    return Hero(
+      tag: 'navbar',
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        height: 50,
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(0),
+          ),
+          margin: EdgeInsets.zero,
+          elevation: 10,
+          color: Colors.blueGrey[600].withOpacity(0.8),
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 7),
+                  child: Text(
+                    "Tamilnadu Science & Technology Centre",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                      child: FlatButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => About()));
-                        },
-                        child: Text(
-                          "About TNSTC",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
+                Container(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        child: FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => About()));
+                          },
+                          child: Text(
+                            "About TNSTC",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Fee Structure",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Fee Structure",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Timings",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
+                      Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Timings",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Container(
-                      height: 30,
-                      child: FloatingActionButton.extended(
-                        heroTag: null,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ContactPage()));
-                        },
-                        backgroundColor: Colors.teal,
-                        label: Text(
-                          "Contact Us",
-                          style: TextStyle(
-                            color: Colors.white,
+                      Container(
+                        height: 30,
+                        child: FloatingActionButton.extended(
+                          heroTag: null,
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ContactPage()));
+                          },
+                          backgroundColor: Colors.teal,
+                          label: Text(
+                            "Contact Us",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      width: 80,
-                    ),
-                  ],
+                      SizedBox(
+                        width: 80,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
