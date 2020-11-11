@@ -84,86 +84,157 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width * 0.2,
-                          child: Card(
-                            color: Colors.yellow[200],
-                            elevation: 20,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  SizedBox(
-                                    height: 30,
-                                  ),
-                                  Text(
-                                    "           Thiru.K.P Anbalagan",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "        Honourable Minister for",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "              Higher Education",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "                  CHAIRMAN",
-                                    style: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 30,
-                                  ),
-                                ],
+                        child: Card(
+                          color: Colors.yellow[200],
+                          elevation: 20,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              SizedBox(
+                                height: 30,
                               ),
+                              Text(
+                                "Thiru.K.P Anbalagan",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Honourable Minister for",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Higher Education",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "CHAIRMAN",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                            ],
                           ),
+                        ),
                       ),
                       SizedBox(
                         height: 50,
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width * 0.2,
-                          child: Card(
-                            color: Colors.greenAccent[200],
-                            elevation: 20,
+                        child: Card(
+                          color: Colors.greenAccent[200],
+                          elevation: 20,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              SizedBox(
+                                height: 30,
+                              ),
+                              Text(
+                                "Executive Director",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Tamilnadu Science and",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Tecnology Centre",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Chennai",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.2,
+                            child: Card(
+                              color: Colors.blue[100],
+                              elevation: 20,
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   SizedBox(
                                     height: 30,
                                   ),
                                   Text(
-                                    "             Executive Director",
+                                    "Director",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -174,12 +245,11 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                     "",
                                     style: TextStyle(
                                       color: Colors.grey[700],
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17,
                                     ),
                                   ),
                                   Text(
-                                    "        Tamilnadu Science and",
+                                    "Periyar science and",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -187,7 +257,7 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                     ),
                                   ),
                                   Text(
-                                    "              Tecnology Centre",
+                                    "Technology Centre",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -198,12 +268,12 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                     "",
                                     style: TextStyle(
                                       color: Colors.grey[700],
-                                      fontSize: 15,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   Text(
-                                    "                    Chennai",
+                                    "Chennai",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -215,221 +285,21 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                   ),
                                 ],
                               ),
+                            ),
                           ),
-                      ),
-                      SizedBox(
-                        height: 50,
-                      ),
-                      Row(
-                        children: <Widget> [
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.2,
-                              child: Card(
-                                color: Colors.blue[100],
-                                elevation: 20,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                      Text(
-                                        "                    Director",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                        ),
-                                      ),
-                                      Text(
-                                        "          Periyar science and",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "          Technology Centre",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "                    Chennai",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                    ],
-                                  ),
-                              ),
-                            ),
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.2,
-                              child: Card(
-                                color: Colors.blue[100],
-                                elevation: 20,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                      Text(
-                                        "              Project Director",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                        ),
-                                      ),
-                                      Text(
-                                        "         Anna Science Centre",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "                -Planeterium",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "               Thiruchirapalli",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                    ],
-                                  ),
-                              ),
-                            ),
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.2,
-                              child: Card(
-                                color: Colors.blue[100],
-                                elevation: 20,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                      Text(
-                                        "        District Science Officer",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                        ),
-                                      ),
-                                      Text(
-                                        "        District Science Centre",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "                    Vellore",
-                                        style: TextStyle(
-                                          color: Colors.grey[700],
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 30,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
                           Container(
                             width: MediaQuery.of(context).size.width * 0.2,
                             child: Card(
                               color: Colors.blue[100],
                               elevation: 20,
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   SizedBox(
                                     height: 30,
                                   ),
                                   Text(
-                                    "        District Science Officer",
+                                    "Project Director",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -444,7 +314,72 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                     ),
                                   ),
                                   Text(
-                                    "       Regional Science Centre",
+                                    "Anna Science Centre",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "-Planeterium",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Thiruchirapalli",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.2,
+                            child: Card(
+                              color: Colors.blue[100],
+                              elevation: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Text(
+                                    "District Science Officer",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                    ),
+                                  ),
+                                  Text(
+                                    "District Science Centre",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
@@ -468,7 +403,72 @@ class _DesktopAdminState extends State<DesktopAdmin> {
                                     ),
                                   ),
                                   Text(
-                                    "                    Coimbatore",
+                                    "Vellore",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.2,
+                            child: Card(
+                              color: Colors.blue[100],
+                              elevation: 20,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Text(
+                                    "District Science Officer",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Regional Science Centre",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "",
+                                    style: TextStyle(
+                                      color: Colors.grey[700],
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Coimbatore",
                                     style: TextStyle(
                                       color: Colors.grey[700],
                                       fontSize: 17,
