@@ -22,6 +22,8 @@ import 'package:tnstc_test_site/Pages/Centre1.dart';
 import 'package:tnstc_test_site/Pages/Centre2.dart';
 import 'package:tnstc_test_site/Pages/about.dart';
 
+import 'chatbot/chatbot.dart';
+
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 void main() {
@@ -31,7 +33,7 @@ void main() {
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     title: 'TNSTC  OFFICIAL  WEBSITE',
-    home: HomePage(),
+    home: ChatBot(),
     //initialRoute: '/home',
     //routes: {
     //  '/home': (context) => HomePage(),
