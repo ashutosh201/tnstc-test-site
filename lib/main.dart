@@ -21,6 +21,8 @@ import 'Data/Data.dart';
 import 'package:tnstc_test_site/Pages/Centre1.dart';
 import 'package:tnstc_test_site/Pages/Centre2.dart';
 import 'package:tnstc_test_site/Pages/about.dart';
+import 'package:wiredash/wiredash.dart';
+import 'package:tnstc_test_site/Pages/constants.dart';
 
 import 'chatbot/chatbot.dart';
 
