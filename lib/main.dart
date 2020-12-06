@@ -26,22 +26,32 @@ import 'chatbot/chatbot.dart';
 
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
+final _navigatorkey=GlobalKey<NavigatorState>();
 void main() {
-  runApp(MaterialApp(
-    theme: ThemeData(
-      primarySwatch: Colors.teal,
-      visualDensity: VisualDensity.adaptivePlatformDensity,
+  runApp(Wiredash(
+    secret: secret,
+    projectId: projectId,
+    navigatorKey: _navigatorkey,
+    child: MaterialApp(
+      navigatorKey: _navigatorkey,
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      title: 'TNSTC  OFFICIAL  WEBSITE',
+      home: Library(),
+      initialRoute: '/home',
+      routes: {
+       '/home': (context) => HomePage(),
+       '/about': (context) => About(),
+       '/contact_us': (context) => ContactPage(),
+        '/fee_structure': (context) => Feestructure(),
+        '/timings': (context) => Timing(),
+      },
     ),
-    title: 'TNSTC  OFFICIAL  WEBSITE',
-    home: Library(),
-    //initialRoute: '/home',
-    //routes: {
-    //  '/home': (context) => HomePage(),
-    //  '/about': (context) => About(),
-    //  '/contact_us': (context) => ContactPage(),
-    //},
   ));
 }
+
 
 class HomePage extends StatefulWidget {
   @override
