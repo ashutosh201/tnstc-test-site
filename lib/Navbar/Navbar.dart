@@ -100,6 +100,19 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                         ),
                       ),
                       Container(
+                        padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
+                        child: FlatButton(
+                          onPressed: () => Wiredash.of(context).show(),
+                          child: Text(
+                            "Feedback",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
                         height: 30,
                         child: FloatingActionButton.extended(
                           heroTag: null,
