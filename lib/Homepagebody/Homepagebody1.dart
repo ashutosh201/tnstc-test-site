@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
+import 'package:tnstc_test_site/Pages/Aims_Objectives.dart';
 
 class Homepagebody1 extends StatefulWidget {
   @override
@@ -164,7 +165,12 @@ class _DesktopHomepagebody1State extends State<DesktopHomepagebody1>
                       Container(
                         child: FloatingActionButton.extended(
                           heroTag: null,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Objectives()));
+                          },
                           backgroundColor: Colors.teal,
                           label: Text(
                             "Details",
@@ -426,7 +432,12 @@ class _MobileHomepagebody1State extends State<MobileHomepagebody1>
                 Container(
                   child: FloatingActionButton.extended(
                     heroTag: null,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Objectives()));
+                    },
                     backgroundColor: Colors.teal,
                     label: Text(
                       "Details",

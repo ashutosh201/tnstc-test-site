@@ -28,7 +28,7 @@ import 'chatbot/chatbot.dart';
 
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
-final _navigatorkey=GlobalKey<NavigatorState>();
+final _navigatorkey = GlobalKey<NavigatorState>();
 void main() {
   runApp(Wiredash(
     secret: secret,
@@ -41,19 +41,18 @@ void main() {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       title: 'TNSTC  OFFICIAL  WEBSITE',
-      home: Library(),
-      initialRoute: '/home',
-      routes: {
-       '/home': (context) => HomePage(),
-       '/about': (context) => About(),
-       '/contact_us': (context) => ContactPage(),
-        '/fee_structure': (context) => Feestructure(),
-        '/timings': (context) => Timing(),
-      },
+      home: HomePage(),
+      //initialRoute: '/home',
+      //routes: {
+      // '/home': (context) => HomePage(),
+      // '/about': (context) => About(),
+      // '/contact_us': (context) => ContactPage(),
+      //  '/fee_structure': (context) => Feestructure(),
+      //  '/timings': (context) => Timing(),
+      //},
     ),
   ));
 }
-
 
 class HomePage extends StatefulWidget {
   @override
@@ -238,6 +237,7 @@ class _MobileHomepageState extends State<MobileHomepage> {
           _scaffoldState.currentState.openDrawer();
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       body: PageView(
         controller: _pageControllerMobile,
         onPageChanged: (int page) {

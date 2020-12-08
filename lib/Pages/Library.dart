@@ -155,6 +155,7 @@ class _MobileLibraryState extends State<MobileLibrary> {
           _scaffoldState.currentState.openDrawer();
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       body: SingleChildScrollView(
         child: Column(
           children: [

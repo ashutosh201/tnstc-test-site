@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Data/Data.dart';
+import 'package:tnstc_test_site/Pages/Development.dart';
+import 'package:tnstc_test_site/Pages/Endowments.dart';
+import 'package:tnstc_test_site/Pages/Library.dart';
+import 'package:tnstc_test_site/Pages/Outreach.dart';
+import 'package:tnstc_test_site/Pages/admin.dart';
+import 'package:wiredash/wiredash.dart';
 
 class Homepagebody3 extends StatelessWidget {
   @override
@@ -63,7 +69,10 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Library()));
+                      },
                     ),
                     SizedBox(
                       width: 10,
@@ -93,7 +102,10 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Admin()));
+                      },
                     ),
                     SizedBox(
                       width: 10,
@@ -167,7 +179,12 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Outreach()));
+                      },
                     ),
                     SizedBox(
                       width: 10,
@@ -204,7 +221,12 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Development()));
+                      },
                     ),
                     SizedBox(
                       width: 10,
@@ -234,7 +256,12 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Endowments()));
+                      },
                     ),
                     SizedBox(
                       width: 10,
@@ -264,7 +291,9 @@ class _DesktopHomepagebody3State extends State<DesktopHomepagebody3> {
                         height: 200,
                         width: 200,
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Wiredash.of(context).show();
+                      },
                     ),
                   ],
                 ),
@@ -327,7 +356,10 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Library()));
+                    },
                   ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
@@ -362,7 +394,10 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Admin()));
+                    },
                   ),
                 ],
               ),
@@ -458,7 +493,10 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Outreach()));
+                    },
                   ),
                 ],
               ),
@@ -512,7 +550,12 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Development()));
+                    },
                   ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
@@ -547,7 +590,9 @@ class _MobileHomepagebody3State extends State<MobileHomepagebody3> {
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Wiredash.of(context).show();
+                    },
                   ),
                 ],
               ),

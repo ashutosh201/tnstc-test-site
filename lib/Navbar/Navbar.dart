@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tnstc_test_site/Pages/Contact.dart';
 import 'package:tnstc_test_site/Pages/about.dart';
+import 'package:tnstc_test_site/Pages/feestructure.dart';
+import 'package:tnstc_test_site/Pages/timings.dart';
+import 'package:wiredash/wiredash.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -76,7 +79,12 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                       Container(
                         padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Feestructure()));
+                          },
                           child: Text(
                             "Fee Structure",
                             style: TextStyle(
@@ -89,7 +97,12 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                       Container(
                         padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Timing()));
+                          },
                           child: Text(
                             "Timings",
                             style: TextStyle(

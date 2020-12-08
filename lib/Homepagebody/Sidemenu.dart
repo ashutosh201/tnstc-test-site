@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:tnstc_test_site/Pages/Contact.dart';
+import 'package:tnstc_test_site/Pages/Development.dart';
+import 'package:tnstc_test_site/Pages/Endowments.dart';
+import 'package:tnstc_test_site/Pages/Library.dart';
+import 'package:tnstc_test_site/Pages/Outreach.dart';
+import 'package:tnstc_test_site/Pages/about.dart';
+import 'package:tnstc_test_site/Pages/admin.dart';
+import 'package:tnstc_test_site/Pages/feestructure.dart';
+import 'package:tnstc_test_site/Pages/timings.dart';
+import 'package:wiredash/wiredash.dart';
 
 class Sidemenu extends StatefulWidget {
   @override
@@ -27,6 +37,8 @@ class _SidemenuState extends State<Sidemenu> {
           ),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => About()));
           },
         ),
         ListTile(
@@ -38,6 +50,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Timings"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Timing()));
           },
         ),
         ListTile(
@@ -49,6 +63,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Contact Us"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ContactPage()));
           },
         ),
         ListTile(
@@ -60,6 +76,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Library"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Library()));
           },
         ),
         ListTile(
@@ -71,6 +89,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Administration"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Admin()));
           },
         ),
         ListTile(
@@ -93,6 +113,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Outreach activities"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Outreach()));
           },
         ),
         ListTile(
@@ -104,17 +126,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Development activities"),
           onTap: () {
             Navigator.pop(context);
-          },
-        ),
-        ListTile(
-          leading: Icon(
-            Icons.feedback,
-            color: Colors.teal,
-            size: 35,
-          ),
-          title: Text("Feedback"),
-          onTap: () {
-            Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Development()));
           },
         ),
         ListTile(
@@ -126,6 +139,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Endowments"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Endowments()));
           },
         ),
         ListTile(
@@ -137,6 +152,8 @@ class _SidemenuState extends State<Sidemenu> {
           title: Text("Fee structure"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Feestructure()));
           },
         ),
       ],
@@ -171,6 +188,8 @@ class _MobileHomeSidemenuState extends State<MobileHomeSidemenu> {
           ),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => About()));
           },
         ),
         ListTile(
@@ -182,6 +201,8 @@ class _MobileHomeSidemenuState extends State<MobileHomeSidemenu> {
           title: Text("Timings"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Timing()));
           },
         ),
         ListTile(
@@ -193,6 +214,8 @@ class _MobileHomeSidemenuState extends State<MobileHomeSidemenu> {
           title: Text("Contact Us"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ContactPage()));
           },
         ),
         ListTile(
@@ -204,6 +227,8 @@ class _MobileHomeSidemenuState extends State<MobileHomeSidemenu> {
           title: Text("Endowments"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Endowments()));
           },
         ),
         ListTile(
@@ -215,6 +240,8 @@ class _MobileHomeSidemenuState extends State<MobileHomeSidemenu> {
           title: Text("Fee structure"),
           onTap: () {
             Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Feestructure()));
           },
         ),
       ],
@@ -248,7 +275,10 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Library()));
+          },
         ),
         ListTile(
           leading: Icon(
@@ -263,7 +293,10 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Admin()));
+          },
         ),
         ListTile(
           leading: Icon(
@@ -278,7 +311,10 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Outreach()));
+          },
         ),
         ListTile(
           leading: Icon(
@@ -293,7 +329,10 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Development()));
+          },
         ),
         ListTile(
           leading: Icon(
@@ -323,7 +362,10 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Endowments()));
+          },
         ),
         ListTile(
           leading: Icon(
@@ -338,7 +380,9 @@ class _DesktopSidemenuState extends State<DesktopSidemenu> {
             ),
           ),
           hoverColor: Colors.lightBlue[900],
-          onTap: () {},
+          onTap: () {
+            Wiredash.of(context).show();
+          },
         ),
       ],
     );
