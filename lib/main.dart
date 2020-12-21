@@ -24,8 +24,6 @@ import 'package:tnstc_test_site/Pages/about.dart';
 import 'package:wiredash/wiredash.dart';
 import 'package:tnstc_test_site/Pages/constants.dart';
 
-import 'chatbot/chatbot.dart';
-
 GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
 
 final _navigatorkey = GlobalKey<NavigatorState>();
